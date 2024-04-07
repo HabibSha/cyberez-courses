@@ -1,0 +1,177 @@
+p {
+  font-size: 1rem;
+  color: var(--color-offwhite);
+}
+
+/* ================ Upper ================= */
+.page_title {
+  position: relative;
+  top: 7.1rem;
+  height: auto;
+  background: url("../images/background.jpeg") no-repeat fixed center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin-bottom: 7.1rem;
+}
+
+.image_overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.register_title {
+  width: 100%;
+  height: 100%;
+}
+
+.register_title_body {
+  max-width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  padding: 3.3rem 0;
+}
+
+.register_title_body .breadcrumbs a.link {
+  color: var(--color-primary);
+}
+
+.breadcrumbs i {
+  color: var(--color-white);
+}
+
+.register_title_body p.breadcrumbs {
+  font-size: 0.85rem;
+  color: var(--color-offwhite);
+  margin-bottom: 1.5rem;
+}
+
+.register_title_body p.register_heading {
+  display: inline;
+  width: 8%;
+  color: rgba(11, 214, 221, 0.788);
+  background-color: rgba(31, 222, 235, 0.11);
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 0.6rem 1rem;
+  border-radius: 2rem;
+}
+
+.register_title_body h2 {
+  font-size: 2.6rem;
+  line-height: 3.2rem;
+  color: var(--color-white);
+  margin-top: 1rem;
+}
+
+span.grad {
+  position: relative;
+  max-width: 6rem;
+  height: 0.2rem;
+  margin: 1rem 0;
+  border-radius: 1rem;
+}
+
+span.grad::before {
+  content: "";
+  display: block; /* Make sure the pseudo-element is displayed */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--bg-border-gradient);
+  background-size: 180% 180%;
+  animation: gradient-animation 5s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 100%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 100%;
+  }
+}
+
+/* ================== Register ============== */
+.register {
+  position: relative;
+  height: auto;
+  padding: 5rem 0;
+}
+
+.register_body {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.6rem;
+}
+
+.register_form {
+  background: rgba(10, 10, 43, 0.75);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 1.5rem;
+  padding: 3rem;
+  transition: var(--transition);
+}
+
+.register_form h2 {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.register_form form input {
+  width: 100%;
+  font-size: 1rem;
+  color: var(--color-white);
+  padding: 1rem 1rem;
+  border-radius: 0.5rem;
+  margin-bottom: 2rem;
+  border: none;
+  outline: none;
+  background: #131237;
+  transition: var(--transition);
+}
+
+.terms_conditions {
+  display: flex;
+  align-items: baseline;
+}
+
+.terms_conditions #checkbox {
+  width: 3%;
+  margin-right: 0.6rem;
+  background-color: #131237 !important;
+}
+
+.terms_conditions label {
+  font-size: 0.82rem;
+  margin-bottom: 0.5rem;
+}
+
+.terms_conditions a {
+  background: linear-gradient(136.85deg, #ff37f2 -15.82%, #405aff 99.57%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-left: 0.3rem;
+  border-bottom: 1px solid #405aff;
+}
+
+.if_account p {
+  font-size: 0.8rem;
+}
+
+.if_account p a {
+  font-size: 0.9rem;
+  color: var(--color-primary);
+}
