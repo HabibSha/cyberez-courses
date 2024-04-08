@@ -28,7 +28,7 @@
     />
 
     <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/register.css" />
+    <link rel="stylesheet" href="./css/login.css" />
   </head>
   <body>
     <!-- =========== START OF NAVBAR ============== -->
@@ -90,38 +90,27 @@
     <!-- ============ End of Upper Page Title and Image Overlay ============== -->
 
     <!-- ============ Start of Register ============ -->
-    <section class="register">
-      <div class="container register_container">
-        <article class="register_body">
-          <div class="register_form">
-            <h2>SignUp</h2>
+    <section class="login">
+      <div class="container login_container">
+        <article class="login_body">
+          <div class="login_form">
+            <h2>SignIn</h2>
             <form action="#">
-              <input type="text" name="name" id="name" placeholder="Name" />
               <input type="email" name="email" id="email" placeholder="Email" />
               <input
                 type="password"
                 name="password"
                 id="password"
-                placeholder="Password"
+                placeholder="Name"
               />
-              <input
-                type="password"
-                name="confirmPassword"
-                id="confirmPassword"
-                placeholder="Confirm Password"
-              />
-              <div class="terms_conditions">
-                <input type="checkbox" id="checkbox" />
-                <label
-                  >I agree to the <a href="#">terms and conditions</a></label
-                >
-              </div>
+
               <div>
-                <a href="#" class="btn_primary">Register</a>
+                <a href="#" class="btn_primary">Login</a>
               </div>
-              <div class="if_account">
+              <div class="no_account">
                 <p>
-                  Already have an account? <a href="login.html">Login Here</a>
+                  Don't have an account?
+                  <a href="register.html">Register Here</a>
                 </p>
               </div>
             </form>
