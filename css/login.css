@@ -19,11 +19,15 @@ p {
 }
 
 .login_form {
-  background: rgba(10, 10, 43, 0.75);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border-radius: 1.5rem;
+  background: linear-gradient(
+    100deg,
+    #2020207e,
+    #23232481,
+    #5a5a5a00,
+    #2928287a,
+    #1f1e1e77
+  );
+  border-radius: 1.2rem;
   padding: 3rem;
   transition: var(--transition);
 }
