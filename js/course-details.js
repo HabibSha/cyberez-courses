@@ -11,17 +11,13 @@ const accordionItems = document.querySelectorAll(".accordion_content");
 accordionItems.forEach((item) => {
   // Listen for clicks on each accordion item
   item.addEventListener("click", function (event) {
-    // Check if the clicked element is h6 or a descendant of h6
     const h6 = item.querySelector("h6");
     if (h6.contains(event.target)) {
-      // First, remove 'active' class from all accordion items
       accordionItems.forEach((otherItem) => {
         if (otherItem !== item) {
-          // Avoid closing the currently clicked item
           otherItem.classList.remove("active");
         }
       });
-      // Then, toggle 'active' class on the clicked item
       item.classList.toggle("active");
     }
   });
