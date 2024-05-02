@@ -17,14 +17,24 @@ document.addEventListener("DOMContentLoaded", function () {
       link.classList.add("active_link");
     }
   });
-});
 
-// Toggle Navbar Menu
-const navbar_btn = document.querySelector(".mobile_navbar_btn");
-const nav_header = document.querySelector("nav");
+  // Toggle Navbar Menu
+  const navbar_btn = document.querySelector(".mobile_navbar_btn");
+  const nav_header = document.querySelector("nav");
+  const navbar_link = document.querySelectorAll(".navbar_link");
 
-navbar_btn.addEventListener("click", () => {
-  nav_header.classList.toggle("active");
+  navbar_btn.addEventListener("click", () => {
+    nav_header.classList.toggle("active");
+  });
+
+  navbar_link.forEach((link) => {
+    link.addEventListener("click", () => {
+      nav_header.classList.remove("active");
+    });
+  });
+
+  // Remove the .active class from .navbar by default
+  nav_header.classList.remove("active");
 });
 
 // goal slider

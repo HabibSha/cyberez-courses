@@ -12,10 +12,14 @@ p {
   margin-bottom: 7.1rem;
 }
 
+.login_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .login_body {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2.6rem;
+  max-width: 40rem;
 }
 
 .login_form {

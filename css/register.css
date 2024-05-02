@@ -12,10 +12,14 @@ p {
   margin-bottom: 7.1rem;
 }
 
+.register_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .register_body {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2.6rem;
+  max-width: 40rem;
 }
 
 .register_form {
@@ -64,14 +68,7 @@ p {
 }
 
 .register_form form input:not([type="checkbox"]):focus {
-  box-shadow: 0 0 0 3px rgba(37, 37, 37, 0.144), 0 0 0 4px gray;
-  border: 1px solid transparent;
-  border-image: var(--border-grad);
-  /* border-image-outset: 0;
-  border-image-repeat: stretch; */
-  border-width: 1px;
-  border-image-slice: 1;
-  border-radius: 0.5rem !important;
+  border: 1px solid var(--color-primary);
   transition: border-radius 0.3s ease;
 }
 
@@ -105,4 +102,55 @@ p {
 .if_account p a {
   font-size: 0.9rem;
   color: var(--color-primary);
+}
+
+/* ============ Device max width 1024px ================== */
+@media screen and (max-width: 1024px) {
+  .container {
+    max-width: var(--container-width-lg);
+    margin: 0 auto;
+  }
+
+  .register {
+    top: 0rem;
+    padding: 4rem 0;
+    margin-bottom: 0rem;
+  }
+
+  .register_form {
+    border-radius: 1rem;
+    padding: 3rem;
+  }
+
+  .btn_primary {
+    font-size: 1rem;
+    padding: 0.75rem 4rem;
+  }
+}
+
+/* ============= Media Query for Tablet Device ================ */
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: var(--container-width-md);
+    margin: 0 auto;
+  }
+
+  .register_form {
+    padding: 2rem;
+  }
+}
+
+/* ============= Media Query for Tablet Device ================ */
+@media screen and (max-width: 600px) {
+  .container {
+    max-width: var(--container-width-sm);
+    margin: 0 auto;
+  }
+
+  .register_form {
+    padding: 2rem 1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
 }
