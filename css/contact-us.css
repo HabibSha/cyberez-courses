@@ -52,7 +52,7 @@ p {
 
 .contact-us_title_body p.contact-us_heading {
   display: inline;
-  width: 8%;
+  width: 100%;
   color: rgba(11, 214, 221, 0.788);
   background-color: rgba(31, 222, 235, 0.11);
   text-transform: uppercase;
@@ -187,12 +187,7 @@ span.grad::before {
 }
 
 .email_address:hover {
-  box-shadow: 0 0 0 3px rgba(37, 37, 37, 0.144);
-  border-image: var(--border-grad);
-  border-width: 1px;
-  border-image-slice: 2;
-  border-radius: 0.6rem !important;
-  transition: border-radius 0.3s ease;
+  border: 1px solid var(--color-primary);
 }
 
 .location {
@@ -238,7 +233,7 @@ span.grad::before {
 
 .contact-us_form img {
   max-width: 100%;
-  height: 72.5vh;
+  height: 73.5vh;
   border-radius: 0.6rem;
 }
 
@@ -324,4 +319,118 @@ textarea:focus {
 
 .btn_primary {
   font-size: 1.1rem;
+}
+
+/* ============ Device max width 1200px ================== */
+@media screen and (max-width: 1200px) {
+  /* ================ Upper ================= */
+  .contact-us_title_body h2 {
+    font-size: 2.5rem;
+    line-height: 3.1rem;
+  }
+
+  /* ================== Contact Us Content ============== */
+  .contact-us_details {
+    gap: 2rem;
+  }
+
+  .phone_number {
+    padding: 2.5rem;
+  }
+
+  .email_address {
+    padding: 2.5rem;
+  }
+
+  .location {
+    padding: 2.5rem;
+  }
+
+  /* ========= Contact Us Form =========== */
+  .contact-us_form {
+    gap: 2rem;
+  }
+
+  .btn_primary {
+    font-size: 1rem;
+    padding: 0.7rem 5rem;
+  }
+}
+
+/* ============ Device max width 1024px ================== */
+@media screen and (max-width: 1024px) {
+  .container {
+    max-width: var(--container-width-lg);
+    margin: 0 auto;
+  }
+
+  /* ================ Upper ================= */
+  .page_title {
+    top: 0rem;
+    height: auto;
+    margin-bottom: 0rem;
+  }
+
+  .contact-us_title_body h2 {
+    font-size: 2.5rem;
+    line-height: 3.1rem;
+  }
+
+  /* ================== Contact Us Content ============== */
+  .contact-us_details {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  /* ========= Contact Us Form =========== */
+  .contact-us_form {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .contact-us_form img {
+    height: 43.5vh;
+  }
+}
+
+/* ============= Media Query for Tablet Device ================ */
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: var(--container-width-md);
+    margin: 0 auto;
+  }
+}
+
+/* ============= Media Query for Tablet Device ================ */
+@media screen and (max-width: 600px) {
+  p {
+    font-size: 0.85rem;
+  }
+
+  .container {
+    max-width: var(--container-width-sm);
+    margin: 0 auto;
+  }
+
+  /* ================== Contact Us Content ============== */
+  .contact-us_title_body h2 {
+    font-size: 2.1rem;
+    line-height: 2.5rem;
+  }
+
+  .contact-us_details {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  form {
+    padding: 2.5rem 1.5rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .contact-us_title_body h2 {
+    font-size: 1.55rem;
+    line-height: 1.85rem;
+  }
 }
