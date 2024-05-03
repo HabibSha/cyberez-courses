@@ -4,9 +4,9 @@ export const coursesData = [
     name: "HTML Full Course Milestone",
     subtitle: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     shortDesc:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi similique illo architecto sunt quam id iure ullam tempora aliquid quaerat rerum debitis officia incidunt iusto, reprehenderit vel tenetur, dolorum nihil!",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi similique illo architecto sunt quam id iure ullam.",
     rating: 4.8,
-    totalRating: "175,535",
+    reviews: "175,535",
     students: "255,336",
     instructor: {
       name: "Rosemary Mante",
@@ -108,9 +108,9 @@ export const coursesData = [
     name: "10 Best CSS Animation Courses for 2024: Bring HTML to Life",
     subtitle: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     shortDesc:
-      "Here is a guide featuring the best free and paid online courses to learn CSS Animation, renowned for its efficient, straightforward, and accessible approach to crafting web animations.",
+      "Here is a guide featuring the best free and paid online courses to learn CSS Animation, renowned for its efficient, straightforward, and accessible.",
     rating: 4.7,
-    totalRating: "125,321",
+    reviews: "125,321",
     students: "215,102",
     instructor: {
       name: "Rosemary Mante",
@@ -212,9 +212,9 @@ export const coursesData = [
     name: "12 Best JavaScript Courses Online in 2024 [Free + Paid]",
     subtitle: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     shortDesc:
-      "Here is a guide featuring the best free and paid online courses to learn JavaScript Mastery, renowned for its efficient, straightforward, and accessible approach to crafting web applications.",
+      "Here is a guide featuring the best free and paid online courses to learn JavaScript Mastery for its efficient, straightforward, and accessible approach.",
     rating: 4.9,
-    totalRating: "203,122",
+    reviews: "203,122",
     students: "327,298",
     instructor: {
       name: "Rosemary Mante",
@@ -315,9 +315,9 @@ export const coursesData = [
     name: "Python For Beginners",
     subtitle: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     shortDesc:
-      "Acquire the prerequisite Python skills to move into specific branches - Data Science(Machine Learning/Deep Learning) , Big Data , Automation Testing, Web development etc..Have the skills and understanding of Python to confidently apply for Python programming jobs",
+      "Acquire the prerequisite Python skills to move into specific branches - Data Science(Machine Learning/Deep Learning) , Big Data , etc..",
     rating: 4.7,
-    totalRating: "145,421",
+    reviews: "145,421",
     students: "210,310",
     instructor: {
       name: "Rosemary Mante",
@@ -418,9 +418,9 @@ export const coursesData = [
     name: "Introduction Of C Programming Training",
     subtitle: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     shortDesc:
-      "C-language is an amazing universally useful programming language that is quick, compact and effectively accessible in all stages.At the point when an individual needs to begin a programming venture, C-language stands need to begin with it. C-language useable in the wide scope of utilizations from windows, IOS to programming which makes dynamic 3D motion pictures it must use to C-language.",
+      "C-language is an amazing universally useful programming language that is quick, compact and effectively accessible in all stages.",
     rating: 4.8,
-    totalRating: "125,100",
+    reviews: "125,100",
     students: "199,921",
     instructor: {
       name: "Rosemary Mante",
@@ -522,9 +522,9 @@ export const coursesData = [
     name: "Introduction to C# Programming",
     subtitle: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     shortDesc:
-      "Learn the fundamentals of computer programming with the C# programming language. This course uses hands-on practice, examples and assignments to develop your knowledge of C# programming by using a state-of-the-art language to build impressive applications on your very own computer.",
+      "Learn the fundamentals of computer programming with the C# programming language. This course uses hands-on practice, examples and assignments.",
     rating: 4.7,
-    totalRating: "76,100",
+    reviews: "76,100",
     students: "101,981",
     instructor: {
       name: "Rosemary Mante",
@@ -628,7 +628,7 @@ export const coursesData = [
     shortDesc:
       "A guide with the best free and paid online Java courses, a high-level object-oriented programming language that run on Android, Windows, and MacOs.",
     rating: 4.7,
-    totalRating: "136,112",
+    reviews: "136,112",
     students: "172,827",
     instructor: {
       name: "Rosemary Mante",
@@ -732,7 +732,7 @@ export const coursesData = [
     shortDesc:
       "The modern PHP course with a project, challenges and theory. Includes SQL and MVC Framework. Get started with PHP 8!",
     rating: 4.7,
-    totalRating: "55,305",
+    reviews: "55,305",
     students: "101,250",
     instructor: {
       name: "Rosemary Mante",
@@ -835,7 +835,7 @@ export const coursesData = [
     shortDesc:
       "These are the best cybersecurity courses to pursue this year. This list features free and premium courses from leading institutions worldwide.",
     rating: 4.7,
-    totalRating: "125,133",
+    reviews: "125,133",
     students: "192,521",
     instructor: {
       name: "Rosemary Mante",
@@ -937,9 +937,9 @@ export const coursesData = [
     name: "10 Best Machine Learning Courses to Take in 2024",
     subtitle: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     shortDesc:
-      "The ability of computers to recognize patterns in data and use them to make predictions that are beyond our capabilities is transforming the world in profound ways. With the rapid advancement of technology, from customer service chatbots to facial recognition software to autonomous cars.",
+      "The ability of computers to recognize patterns in data and use them to make predictions that are beyond our capabilities is transforming the world.",
     rating: 4.8,
-    totalRating: "112,411",
+    reviews: "112,411",
     students: "211,104",
     instructor: {
       name: "Rosemary Mante",
@@ -1041,9 +1041,9 @@ export const coursesData = [
     name: "The Secrets Behind Success Of Certified Ethical Hacking",
     subtitle: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     shortDesc:
-      "The importance of digital presence has become paramount for organizations since the onslaught of the pandemic. As a result, vulnerabilities in data safety have also increased. This calls in for the need for experts who can secure these vulnerabilities and ensure data safety for organizations and individuals.",
+      "The importance of digital presence has become paramount for organizations since the onslaught of the pandemic.",
     rating: 4.7,
-    totalRating: "45,120",
+    reviews: "45,120",
     students: "96,231",
     instructor: {
       name: "Rosemary Mante",
@@ -1147,7 +1147,7 @@ export const coursesData = [
     shortDesc:
       "Learn and Master Basic Programming, Data Structures, Algorithm, OOP, Database and solve 500+ coding problems to become an exceptionally well world-class Programmer.",
     rating: 4.7,
-    totalRating: "113,452",
+    reviews: "113,452",
     students: "178,145",
     instructor: {
       name: "Rosemary Mante",

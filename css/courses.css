@@ -443,7 +443,7 @@ span.grad::before {
   }
 }
 
-/* ============ Device max width 1200px ================== */
+/* ============ Device max width 1024px ================== */
 @media screen and (max-width: 1024px) {
   .page_title {
     top: 0;
@@ -553,8 +553,9 @@ span.grad::before {
 
   .hover_element {
     width: 100%;
-    max-width: 70%;
-    padding: 1.5rem;
+    max-width: 100%;
+    max-height: 100%;
+    padding: 1.5rem 1.5rem 1.5rem 1.5rem;
     bottom: 0;
     left: 0;
     transform: translateY(0);
@@ -566,11 +567,11 @@ span.grad::before {
   }
 
   .course_body:hover .hover_element {
-    transform: translateY(103%);
+    transform: translateY(134%);
   }
 
   .courses_container article:nth-child(4n) .course_body:hover .hover_element {
-    transform: translateY(103%);
+    transform: translateY(134%);
   }
 
   .courses_container
@@ -583,7 +584,7 @@ span.grad::before {
   }
 
   .courses_container article:nth-child(3n) .course_body:hover .hover_element {
-    transform: translateY(103%);
+    transform: translateY(129%);
   }
 
   .courses_container
@@ -596,7 +597,7 @@ span.grad::before {
   }
 
   .courses_container article:nth-child(2n) .course_body:hover .hover_element {
-    transform: translateY(103%);
+    transform: translateY(134%);
   }
 
   .courses_container
