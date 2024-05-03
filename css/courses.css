@@ -325,6 +325,7 @@ span.grad::before {
 }
 
 .hover_element p {
+  color: var(--color-black);
   font-size: 0.87rem;
   margin-top: 0.3rem;
 }
