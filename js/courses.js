@@ -13,10 +13,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // dynamically add data for course body and hover element
 const loadCourses = () => {
-  const courses = document.querySelector(".courses_container");
-  courses.innerHTML = `${coursesData
+  const coursesContainer = document.querySelector(".courses_container");
+  if (!coursesContainer) return;
+
+  coursesContainer.innerHTML = `${coursesData
     .map((coursesInfo) => {
       const {
+        id,
         name,
         subtitle,
         shortDesc,
@@ -53,7 +56,10 @@ const loadCourses = () => {
         ></span>
         <span class="total_review">(${reviews})</span>
       </p>
+      <div class="item_flex">
       <h6>$12.99 <span class="strike">$47.99</span></h6>
+      <button data-id="${id}" class="details_btn">Details &#8594;</button>
+      </div>
     </div>
     <!-- hover element -->
     <div class="hover_element">
@@ -89,6 +95,14 @@ const loadCourses = () => {
   </div></article>`;
     })
     .join("")}`;
+
+  document.querySelectorAll(".details_btn").forEach((button) => {
+    button.addEventListener("click", function () {
+      const courseId = this.getAttribute("data-id");
+      window.location.href = `/course-details.html?id=${courseId}`;
+      console.log(window.location.href);
+    });
+  });
 };
 
 loadCourses();

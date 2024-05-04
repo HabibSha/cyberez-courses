@@ -177,7 +177,6 @@ span.grad::before {
   padding: 0.6rem;
   border: 1px solid rgb(65, 64, 64);
   border-radius: 0.3rem;
-  cursor: pointer;
   /* z-index: 1; */
   transition: var(--transition);
 }
@@ -258,6 +257,12 @@ span.grad::before {
   color: var(--color-offwhite);
 }
 
+.course_details .item_flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .course_details h6 {
   color: var(--color-white);
   font-size: 1.1rem;
@@ -271,7 +276,34 @@ span.grad::before {
   margin-left: 1rem;
 }
 
-/* hover elements */
+.course_details .item_flex .details_btn {
+  position: relative;
+  font-size: 0.8rem;
+  font-weight: 500;
+  background-image: linear-gradient(
+    to right,
+    #00d2ff 0%,
+    #3a7bd5 51%,
+    #00d2ff 100%
+  );
+  padding: 0.6rem 1.3rem;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.35s;
+  background-size: 200% auto;
+  color: var(--color-white);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.course_details .item_flex .details_btn:hover {
+  background-position: right center;
+  color: var(--color-white);
+  text-decoration: none;
+}
+
+/* ==================== hover elements =============*/
 
 .hover_element {
   position: absolute;

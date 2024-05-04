@@ -19,57 +19,48 @@ export const coursesData = [
       students: "215,102",
       courses: 15,
     },
-    learningThings: [
-      {
-        id: 1,
-        desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque omnis eveniet ullam ad laudantium quae sed perferendis? Exercitationem, corporis. Temporibus fugit asperiores velit, illo placeat magni eveniet. Soluta, eveniet dolorem. Ea quisquam labore quos, rerum quam aliquid dolorum et fugit. Temporibus fugit asperiores velit, illo placeat magni eveniet. Soluta, eveniet dolorem. Ea quisquam labore quos, rerum quam aliquid dolorum et fugit.",
-      },
-      {
-        id: 2,
-        facility:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi eligendi neque maiores? Cumque?",
-      },
-      {
-        id: 3,
-        facility:
-          "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis velit ipsam quia?",
-      },
-      {
-        id: 4,
-        facility:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, ex?",
-      },
-      {
-        id: 5,
-        facility:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, necessitatibus reprehenderit?",
-      },
-      {
-        id: 6,
-        facility:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id impedit sequi repellendus cumque dolorem!",
-      },
-      {
-        id: 7,
-        facility:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, totam debitis",
-      },
-      {
-        id: 8,
-        facility:
-          "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti repellat repellendus molestiae.",
-      },
-      {
-        id: 9,
-        facility:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, odit!",
-      },
-      {
-        id: 10,
-        facility:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem dolorem nihil, eius nostrum beatae qui dolores aliquid porro, incidunt dolore natus consectetur dignissimos aspernatur ex magni veritatis voluptas consequatur et odio provident corrupti, consequuntur culpa quod. Excepturi id tenetur unde quisquam, culpa cumque animi ducimus! Quidem dolorem nihil, eius nostrum beatae qui dolores aliquid porro, incidunt dolore natus consectetur dignissimos aspernatur. Excepturi id tenetur unde quisquam, culpa cumque animi ducimus! Quidem dolorem nihil, eius nostrum beatae qui dolores aliquid porro, incidunt dolore natus consectetur dignissimos aspernatur.",
-      },
-    ],
+    learningThings: {
+      desc1:
+        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque omnis eveniet ullam ad laudantium quae sed perferendis? Exercitationem, corporis. Temporibus fugit asperiores velit, illo placeat magni eveniet. Soluta, eveniet dolorem. Ea quisquam labore quos, rerum quam aliquid dolorum et fugit. Temporibus fugit asperiores velit, illo placeat magni eveniet. Soluta, eveniet dolorem. Ea quisquam labore quos, rerum quam aliquid dolorum et fugit.",
+      facilities1: [
+        {
+          id: 1,
+          faci: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi eligendi neque maiores? Cumque?",
+        },
+        {
+          id: 2,
+          faci: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis velit ipsam quia?",
+        },
+        {
+          id: 3,
+          faci: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, ex?",
+        },
+        {
+          id: 4,
+          faci: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, necessitatibus reprehenderit?",
+        },
+      ],
+      facilities2: [
+        {
+          id: 1,
+          faci: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id impedit sequi repellendus cumque dolorem!",
+        },
+        {
+          id: 2,
+          faci: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, totam debitis",
+        },
+        {
+          id: 3,
+          faci: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti repellat repellendus molestiae.",
+        },
+        {
+          id: 9,
+          faci: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, odit!",
+        },
+      ],
+      desc2:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem dolorem nihil, eius nostrum beatae qui dolores aliquid porro, incidunt dolore natus consectetur dignissimos aspernatur ex magni veritatis voluptas consequatur et odio provident corrupti, consequuntur culpa quod. Excepturi id tenetur unde quisquam, culpa cumque animi ducimus! Quidem dolorem nihil, eius nostrum beatae qui dolores aliquid porro, incidunt dolore natus consectetur dignissimos aspernatur. Excepturi id tenetur unde quisquam, culpa cumque animi ducimus! Quidem dolorem nihil, eius nostrum beatae qui dolores aliquid porro, incidunt dolore natus consectetur dignissimos aspernatur.",
+    },
     image:
       "https://resources.reed.co.uk/courses/coursemedia/436537/6a1e69a6-6922-43ab-bc85-5d8548a32e20_cover.webp",
     courseContent: {
@@ -82,26 +73,46 @@ export const coursesData = [
       courseDesc:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, debitis sunt? Laborum expedita velit possimus Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, debitis sunt? Laborum expedita velit possimus accusantium, molestias aliquam quam sunt quisquam odit blanditiis maxime ullam nisi voluptates!",
     },
-    requirements: {
-      require1:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi eligendi neque maiores? Cumque?",
-      require2:
-        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis velit ipsam quia?",
-      require3:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, ex?",
-      require4:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, necessitatibus reprehenderit?",
-    },
-    requireDesc: {
-      desc1:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id impedit sequi repellendus cumque dolorem!",
-      desc2:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, totam debitis.",
-      desc3:
-        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti repellat repellendus molestiae.",
-      desc4:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, odit!",
-    },
+    requirements: [
+      {
+        id: 1,
+        require:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi eligendi neque maiores? Cumque?",
+      },
+      {
+        id: 2,
+        require:
+          "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis velit ipsam quia?",
+      },
+      {
+        id: 3,
+        require:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, ex?",
+      },
+      {
+        id: 4,
+        require:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, necessitatibus reprehenderit?",
+      },
+    ],
+    requireDesc: [
+      {
+        id: 1,
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id impedit sequi repellendus cumque dolorem!",
+      },
+      {
+        id: 2,
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, totam debitis.",
+      },
+      {
+        id: 3,
+        desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti repellat repellendus molestiae.",
+      },
+      {
+        id: 4,
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, odit!",
+      },
+    ],
   },
   {
     id: 2,
@@ -123,57 +134,48 @@ export const coursesData = [
       students: "215,102",
       courses: 15,
     },
-    learningThings: [
-      {
-        id: 1,
-        desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque omnis eveniet ullam ad laudantium quae sed perferendis? Exercitationem, corporis. Temporibus fugit asperiores velit, illo placeat magni eveniet. Soluta, eveniet dolorem. Ea quisquam labore quos, rerum quam aliquid dolorum et fugit. Temporibus fugit asperiores velit, illo placeat magni eveniet. Soluta, eveniet dolorem. Ea quisquam labore quos, rerum quam aliquid dolorum et fugit.",
-      },
-      {
-        id: 2,
-        facility:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi eligendi neque maiores? Cumque?",
-      },
-      {
-        id: 3,
-        facility:
-          "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis velit ipsam quia?",
-      },
-      {
-        id: 4,
-        facility:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, ex?",
-      },
-      {
-        id: 5,
-        facility:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, necessitatibus reprehenderit?",
-      },
-      {
-        id: 6,
-        facility:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id impedit sequi repellendus cumque dolorem!",
-      },
-      {
-        id: 7,
-        facility:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, totam debitis",
-      },
-      {
-        id: 8,
-        facility:
-          "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti repellat repellendus molestiae.",
-      },
-      {
-        id: 9,
-        facility:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, odit!",
-      },
-      {
-        id: 10,
-        facility:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem dolorem nihil, eius nostrum beatae qui dolores aliquid porro, incidunt dolore natus consectetur dignissimos aspernatur ex magni veritatis voluptas consequatur et odio provident corrupti, consequuntur culpa quod. Excepturi id tenetur unde quisquam, culpa cumque animi ducimus! Quidem dolorem nihil, eius nostrum beatae qui dolores aliquid porro, incidunt dolore natus consectetur dignissimos aspernatur. Excepturi id tenetur unde quisquam, culpa cumque animi ducimus! Quidem dolorem nihil, eius nostrum beatae qui dolores aliquid porro, incidunt dolore natus consectetur dignissimos aspernatur.",
-      },
-    ],
+    learningThings: {
+      desc1:
+        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque omnis eveniet ullam ad laudantium quae sed perferendis? Exercitationem, corporis. Temporibus fugit asperiores velit, illo placeat magni eveniet. Soluta, eveniet dolorem. Ea quisquam labore quos, rerum quam aliquid dolorum et fugit. Temporibus fugit asperiores velit, illo placeat magni eveniet. Soluta, eveniet dolorem. Ea quisquam labore quos, rerum quam aliquid dolorum et fugit.",
+      facilities1: [
+        {
+          id: 1,
+          faci: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi eligendi neque maiores? Cumque?",
+        },
+        {
+          id: 2,
+          faci: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis velit ipsam quia?",
+        },
+        {
+          id: 3,
+          faci: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, ex?",
+        },
+        {
+          id: 4,
+          faci: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, necessitatibus reprehenderit?",
+        },
+      ],
+      facilities2: [
+        {
+          id: 1,
+          faci: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id impedit sequi repellendus cumque dolorem!",
+        },
+        {
+          id: 2,
+          faci: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, totam debitis",
+        },
+        {
+          id: 3,
+          faci: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti repellat repellendus molestiae.",
+        },
+        {
+          id: 9,
+          faci: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, odit!",
+        },
+      ],
+      desc2:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem dolorem nihil, eius nostrum beatae qui dolores aliquid porro, incidunt dolore natus consectetur dignissimos aspernatur ex magni veritatis voluptas consequatur et odio provident corrupti, consequuntur culpa quod. Excepturi id tenetur unde quisquam, culpa cumque animi ducimus! Quidem dolorem nihil, eius nostrum beatae qui dolores aliquid porro, incidunt dolore natus consectetur dignissimos aspernatur. Excepturi id tenetur unde quisquam, culpa cumque animi ducimus! Quidem dolorem nihil, eius nostrum beatae qui dolores aliquid porro, incidunt dolore natus consectetur dignissimos aspernatur.",
+    },
     image:
       "https://cdn.hashnode.com/res/hashnode/image/upload/v1678374652968/8b372bdb-5a59-430e-9e48-e7a6f533d033.png",
     courseContent: {
@@ -186,26 +188,46 @@ export const coursesData = [
       courseDesc:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, debitis sunt? Laborum expedita velit possimus Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, debitis sunt? Laborum expedita velit possimus accusantium, molestias aliquam quam sunt quisquam odit blanditiis maxime ullam nisi voluptates!",
     },
-    requirements: {
-      require1:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi eligendi neque maiores? Cumque?",
-      require2:
-        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis velit ipsam quia?",
-      require3:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, ex?",
-      require4:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, necessitatibus reprehenderit?",
-    },
-    requireDesc: {
-      desc1:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id impedit sequi repellendus cumque dolorem!",
-      desc2:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, totam debitis.",
-      desc3:
-        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti repellat repellendus molestiae.",
-      desc4:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, odit!",
-    },
+    requirements: [
+      {
+        id: 1,
+        require:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi eligendi neque maiores? Cumque?",
+      },
+      {
+        id: 2,
+        require:
+          "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis velit ipsam quia?",
+      },
+      {
+        id: 3,
+        require:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, ex?",
+      },
+      {
+        id: 4,
+        require:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, necessitatibus reprehenderit?",
+      },
+    ],
+    requireDesc: [
+      {
+        id: 1,
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id impedit sequi repellendus cumque dolorem!",
+      },
+      {
+        id: 2,
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, totam debitis.",
+      },
+      {
+        id: 3,
+        desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti repellat repellendus molestiae.",
+      },
+      {
+        id: 4,
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, odit!",
+      },
+    ],
   },
   {
     id: 3,
@@ -227,57 +249,48 @@ export const coursesData = [
       students: "215,102",
       courses: 15,
     },
-    learningThings: [
-      {
-        id: 1,
-        desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque omnis eveniet ullam ad laudantium quae sed perferendis? Exercitationem, corporis. Temporibus fugit asperiores velit, illo placeat magni eveniet. Soluta, eveniet dolorem. Ea quisquam labore quos, rerum quam aliquid dolorum et fugit. Temporibus fugit asperiores velit, illo placeat magni eveniet. Soluta, eveniet dolorem. Ea quisquam labore quos, rerum quam aliquid dolorum et fugit.",
-      },
-      {
-        id: 2,
-        facility:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi eligendi neque maiores? Cumque?",
-      },
-      {
-        id: 3,
-        facility:
-          "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis velit ipsam quia?",
-      },
-      {
-        id: 4,
-        facility:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, ex?",
-      },
-      {
-        id: 5,
-        facility:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, necessitatibus reprehenderit?",
-      },
-      {
-        id: 6,
-        facility:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id impedit sequi repellendus cumque dolorem!",
-      },
-      {
-        id: 7,
-        facility:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, totam debitis",
-      },
-      {
-        id: 8,
-        facility:
-          "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti repellat repellendus molestiae.",
-      },
-      {
-        id: 9,
-        facility:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, odit!",
-      },
-      {
-        id: 10,
-        facility:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem dolorem nihil, eius nostrum beatae qui dolores aliquid porro, incidunt dolore natus consectetur dignissimos aspernatur ex magni veritatis voluptas consequatur et odio provident corrupti, consequuntur culpa quod. Excepturi id tenetur unde quisquam, culpa cumque animi ducimus! Quidem dolorem nihil, eius nostrum beatae qui dolores aliquid porro, incidunt dolore natus consectetur dignissimos aspernatur. Excepturi id tenetur unde quisquam, culpa cumque animi ducimus! Quidem dolorem nihil, eius nostrum beatae qui dolores aliquid porro, incidunt dolore natus consectetur dignissimos aspernatur.",
-      },
-    ],
+    learningThings: {
+      desc1:
+        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque omnis eveniet ullam ad laudantium quae sed perferendis? Exercitationem, corporis. Temporibus fugit asperiores velit, illo placeat magni eveniet. Soluta, eveniet dolorem. Ea quisquam labore quos, rerum quam aliquid dolorum et fugit. Temporibus fugit asperiores velit, illo placeat magni eveniet. Soluta, eveniet dolorem. Ea quisquam labore quos, rerum quam aliquid dolorum et fugit.",
+      facilities1: [
+        {
+          id: 1,
+          faci: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi eligendi neque maiores? Cumque?",
+        },
+        {
+          id: 2,
+          faci: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis velit ipsam quia?",
+        },
+        {
+          id: 3,
+          faci: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, ex?",
+        },
+        {
+          id: 4,
+          faci: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, necessitatibus reprehenderit?",
+        },
+      ],
+      facilities2: [
+        {
+          id: 1,
+          faci: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id impedit sequi repellendus cumque dolorem!",
+        },
+        {
+          id: 2,
+          faci: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, totam debitis",
+        },
+        {
+          id: 3,
+          faci: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti repellat repellendus molestiae.",
+        },
+        {
+          id: 9,
+          faci: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, odit!",
+        },
+      ],
+      desc2:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem dolorem nihil, eius nostrum beatae qui dolores aliquid porro, incidunt dolore natus consectetur dignissimos aspernatur ex magni veritatis voluptas consequatur et odio provident corrupti, consequuntur culpa quod. Excepturi id tenetur unde quisquam, culpa cumque animi ducimus! Quidem dolorem nihil, eius nostrum beatae qui dolores aliquid porro, incidunt dolore natus consectetur dignissimos aspernatur. Excepturi id tenetur unde quisquam, culpa cumque animi ducimus! Quidem dolorem nihil, eius nostrum beatae qui dolores aliquid porro, incidunt dolore natus consectetur dignissimos aspernatur.",
+    },
     image: "https://cdn.hackr.io/uploads/posts/large/1654234535LI9mLOk6yE.png",
     courseContent: {
       intro:
@@ -289,26 +302,46 @@ export const coursesData = [
       courseDesc:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, debitis sunt? Laborum expedita velit possimus Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, debitis sunt? Laborum expedita velit possimus accusantium, molestias aliquam quam sunt quisquam odit blanditiis maxime ullam nisi voluptates!",
     },
-    requirements: {
-      require1:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi eligendi neque maiores? Cumque?",
-      require2:
-        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis velit ipsam quia?",
-      require3:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, ex?",
-      require4:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, necessitatibus reprehenderit?",
-    },
-    requireDesc: {
-      desc1:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id impedit sequi repellendus cumque dolorem!",
-      desc2:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, totam debitis.",
-      desc3:
-        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti repellat repellendus molestiae.",
-      desc4:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, odit!",
-    },
+    requirements: [
+      {
+        id: 1,
+        require:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi eligendi neque maiores? Cumque?",
+      },
+      {
+        id: 2,
+        require:
+          "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis velit ipsam quia?",
+      },
+      {
+        id: 3,
+        require:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, ex?",
+      },
+      {
+        id: 4,
+        require:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, necessitatibus reprehenderit?",
+      },
+    ],
+    requireDesc: [
+      {
+        id: 1,
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id impedit sequi repellendus cumque dolorem!",
+      },
+      {
+        id: 2,
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, totam debitis.",
+      },
+      {
+        id: 3,
+        desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti repellat repellendus molestiae.",
+      },
+      {
+        id: 4,
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, odit!",
+      },
+    ],
   },
   {
     id: 4,
@@ -330,57 +363,48 @@ export const coursesData = [
       students: "215,102",
       courses: 15,
     },
-    learningThings: [
-      {
-        id: 1,
-        desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque omnis eveniet ullam ad laudantium quae sed perferendis? Exercitationem, corporis. Temporibus fugit asperiores velit, illo placeat magni eveniet. Soluta, eveniet dolorem. Ea quisquam labore quos, rerum quam aliquid dolorum et fugit. Temporibus fugit asperiores velit, illo placeat magni eveniet. Soluta, eveniet dolorem. Ea quisquam labore quos, rerum quam aliquid dolorum et fugit.",
-      },
-      {
-        id: 2,
-        facility:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi eligendi neque maiores? Cumque?",
-      },
-      {
-        id: 3,
-        facility:
-          "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis velit ipsam quia?",
-      },
-      {
-        id: 4,
-        facility:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, ex?",
-      },
-      {
-        id: 5,
-        facility:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, necessitatibus reprehenderit?",
-      },
-      {
-        id: 6,
-        facility:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id impedit sequi repellendus cumque dolorem!",
-      },
-      {
-        id: 7,
-        facility:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, totam debitis",
-      },
-      {
-        id: 8,
-        facility:
-          "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti repellat repellendus molestiae.",
-      },
-      {
-        id: 9,
-        facility:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, odit!",
-      },
-      {
-        id: 10,
-        facility:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem dolorem nihil, eius nostrum beatae qui dolores aliquid porro, incidunt dolore natus consectetur dignissimos aspernatur ex magni veritatis voluptas consequatur et odio provident corrupti, consequuntur culpa quod. Excepturi id tenetur unde quisquam, culpa cumque animi ducimus! Quidem dolorem nihil, eius nostrum beatae qui dolores aliquid porro, incidunt dolore natus consectetur dignissimos aspernatur. Excepturi id tenetur unde quisquam, culpa cumque animi ducimus! Quidem dolorem nihil, eius nostrum beatae qui dolores aliquid porro, incidunt dolore natus consectetur dignissimos aspernatur.",
-      },
-    ],
+    learningThings: {
+      desc1:
+        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque omnis eveniet ullam ad laudantium quae sed perferendis? Exercitationem, corporis. Temporibus fugit asperiores velit, illo placeat magni eveniet. Soluta, eveniet dolorem. Ea quisquam labore quos, rerum quam aliquid dolorum et fugit. Temporibus fugit asperiores velit, illo placeat magni eveniet. Soluta, eveniet dolorem. Ea quisquam labore quos, rerum quam aliquid dolorum et fugit.",
+      facilities1: [
+        {
+          id: 1,
+          faci: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi eligendi neque maiores? Cumque?",
+        },
+        {
+          id: 2,
+          faci: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis velit ipsam quia?",
+        },
+        {
+          id: 3,
+          faci: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, ex?",
+        },
+        {
+          id: 4,
+          faci: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, necessitatibus reprehenderit?",
+        },
+      ],
+      facilities2: [
+        {
+          id: 1,
+          faci: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id impedit sequi repellendus cumque dolorem!",
+        },
+        {
+          id: 2,
+          faci: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, totam debitis",
+        },
+        {
+          id: 3,
+          faci: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti repellat repellendus molestiae.",
+        },
+        {
+          id: 9,
+          faci: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, odit!",
+        },
+      ],
+      desc2:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem dolorem nihil, eius nostrum beatae qui dolores aliquid porro, incidunt dolore natus consectetur dignissimos aspernatur ex magni veritatis voluptas consequatur et odio provident corrupti, consequuntur culpa quod. Excepturi id tenetur unde quisquam, culpa cumque animi ducimus! Quidem dolorem nihil, eius nostrum beatae qui dolores aliquid porro, incidunt dolore natus consectetur dignissimos aspernatur. Excepturi id tenetur unde quisquam, culpa cumque animi ducimus! Quidem dolorem nihil, eius nostrum beatae qui dolores aliquid porro, incidunt dolore natus consectetur dignissimos aspernatur.",
+    },
     image: "https://img-b.udemycdn.com/course/750x422/2314160_8d61_6.jpg",
     courseContent: {
       intro:
@@ -392,26 +416,46 @@ export const coursesData = [
       courseDesc:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, debitis sunt? Laborum expedita velit possimus Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, debitis sunt? Laborum expedita velit possimus accusantium, molestias aliquam quam sunt quisquam odit blanditiis maxime ullam nisi voluptates!",
     },
-    requirements: {
-      require1:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi eligendi neque maiores? Cumque?",
-      require2:
-        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis velit ipsam quia?",
-      require3:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, ex?",
-      require4:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, necessitatibus reprehenderit?",
-    },
-    requireDesc: {
-      desc1:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id impedit sequi repellendus cumque dolorem!",
-      desc2:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, totam debitis.",
-      desc3:
-        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti repellat repellendus molestiae.",
-      desc4:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, odit!",
-    },
+    requirements: [
+      {
+        id: 1,
+        require:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi eligendi neque maiores? Cumque?",
+      },
+      {
+        id: 2,
+        require:
+          "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis velit ipsam quia?",
+      },
+      {
+        id: 3,
+        require:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, ex?",
+      },
+      {
+        id: 4,
+        require:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, necessitatibus reprehenderit?",
+      },
+    ],
+    requireDesc: [
+      {
+        id: 1,
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id impedit sequi repellendus cumque dolorem!",
+      },
+      {
+        id: 2,
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, totam debitis.",
+      },
+      {
+        id: 3,
+        desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti repellat repellendus molestiae.",
+      },
+      {
+        id: 4,
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, odit!",
+      },
+    ],
   },
   {
     id: 5,
@@ -433,57 +477,48 @@ export const coursesData = [
       students: "215,102",
       courses: 15,
     },
-    learningThings: [
-      {
-        id: 1,
-        desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque omnis eveniet ullam ad laudantium quae sed perferendis? Exercitationem, corporis. Temporibus fugit asperiores velit, illo placeat magni eveniet. Soluta, eveniet dolorem. Ea quisquam labore quos, rerum quam aliquid dolorum et fugit. Temporibus fugit asperiores velit, illo placeat magni eveniet. Soluta, eveniet dolorem. Ea quisquam labore quos, rerum quam aliquid dolorum et fugit.",
-      },
-      {
-        id: 2,
-        facility:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi eligendi neque maiores? Cumque?",
-      },
-      {
-        id: 3,
-        facility:
-          "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis velit ipsam quia?",
-      },
-      {
-        id: 4,
-        facility:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, ex?",
-      },
-      {
-        id: 5,
-        facility:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, necessitatibus reprehenderit?",
-      },
-      {
-        id: 6,
-        facility:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id impedit sequi repellendus cumque dolorem!",
-      },
-      {
-        id: 7,
-        facility:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, totam debitis",
-      },
-      {
-        id: 8,
-        facility:
-          "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti repellat repellendus molestiae.",
-      },
-      {
-        id: 9,
-        facility:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, odit!",
-      },
-      {
-        id: 10,
-        facility:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem dolorem nihil, eius nostrum beatae qui dolores aliquid porro, incidunt dolore natus consectetur dignissimos aspernatur ex magni veritatis voluptas consequatur et odio provident corrupti, consequuntur culpa quod. Excepturi id tenetur unde quisquam, culpa cumque animi ducimus! Quidem dolorem nihil, eius nostrum beatae qui dolores aliquid porro, incidunt dolore natus consectetur dignissimos aspernatur. Excepturi id tenetur unde quisquam, culpa cumque animi ducimus! Quidem dolorem nihil, eius nostrum beatae qui dolores aliquid porro, incidunt dolore natus consectetur dignissimos aspernatur.",
-      },
-    ],
+    learningThings: {
+      desc1:
+        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque omnis eveniet ullam ad laudantium quae sed perferendis? Exercitationem, corporis. Temporibus fugit asperiores velit, illo placeat magni eveniet. Soluta, eveniet dolorem. Ea quisquam labore quos, rerum quam aliquid dolorum et fugit. Temporibus fugit asperiores velit, illo placeat magni eveniet. Soluta, eveniet dolorem. Ea quisquam labore quos, rerum quam aliquid dolorum et fugit.",
+      facilities1: [
+        {
+          id: 1,
+          faci: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi eligendi neque maiores? Cumque?",
+        },
+        {
+          id: 2,
+          faci: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis velit ipsam quia?",
+        },
+        {
+          id: 3,
+          faci: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, ex?",
+        },
+        {
+          id: 4,
+          faci: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, necessitatibus reprehenderit?",
+        },
+      ],
+      facilities2: [
+        {
+          id: 1,
+          faci: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id impedit sequi repellendus cumque dolorem!",
+        },
+        {
+          id: 2,
+          faci: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, totam debitis",
+        },
+        {
+          id: 3,
+          faci: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti repellat repellendus molestiae.",
+        },
+        {
+          id: 9,
+          faci: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, odit!",
+        },
+      ],
+      desc2:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem dolorem nihil, eius nostrum beatae qui dolores aliquid porro, incidunt dolore natus consectetur dignissimos aspernatur ex magni veritatis voluptas consequatur et odio provident corrupti, consequuntur culpa quod. Excepturi id tenetur unde quisquam, culpa cumque animi ducimus! Quidem dolorem nihil, eius nostrum beatae qui dolores aliquid porro, incidunt dolore natus consectetur dignissimos aspernatur. Excepturi id tenetur unde quisquam, culpa cumque animi ducimus! Quidem dolorem nihil, eius nostrum beatae qui dolores aliquid porro, incidunt dolore natus consectetur dignissimos aspernatur.",
+    },
     image:
       "https://www.cdmi.in/courses@2x/c-programming-training-institute.webp",
     courseContent: {
@@ -496,26 +531,46 @@ export const coursesData = [
       courseDesc:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, debitis sunt? Laborum expedita velit possimus Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, debitis sunt? Laborum expedita velit possimus accusantium, molestias aliquam quam sunt quisquam odit blanditiis maxime ullam nisi voluptates!",
     },
-    requirements: {
-      require1:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi eligendi neque maiores? Cumque?",
-      require2:
-        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis velit ipsam quia?",
-      require3:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, ex?",
-      require4:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, necessitatibus reprehenderit?",
-    },
-    requireDesc: {
-      desc1:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id impedit sequi repellendus cumque dolorem!",
-      desc2:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, totam debitis.",
-      desc3:
-        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti repellat repellendus molestiae.",
-      desc4:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, odit!",
-    },
+    requirements: [
+      {
+        id: 1,
+        require:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi eligendi neque maiores? Cumque?",
+      },
+      {
+        id: 2,
+        require:
+          "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis velit ipsam quia?",
+      },
+      {
+        id: 3,
+        require:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, ex?",
+      },
+      {
+        id: 4,
+        require:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, necessitatibus reprehenderit?",
+      },
+    ],
+    requireDesc: [
+      {
+        id: 1,
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id impedit sequi repellendus cumque dolorem!",
+      },
+      {
+        id: 2,
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, totam debitis.",
+      },
+      {
+        id: 3,
+        desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti repellat repellendus molestiae.",
+      },
+      {
+        id: 4,
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, odit!",
+      },
+    ],
   },
   {
     id: 6,
@@ -537,57 +592,48 @@ export const coursesData = [
       students: "215,102",
       courses: 15,
     },
-    learningThings: [
-      {
-        id: 1,
-        desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque omnis eveniet ullam ad laudantium quae sed perferendis? Exercitationem, corporis. Temporibus fugit asperiores velit, illo placeat magni eveniet. Soluta, eveniet dolorem. Ea quisquam labore quos, rerum quam aliquid dolorum et fugit. Temporibus fugit asperiores velit, illo placeat magni eveniet. Soluta, eveniet dolorem. Ea quisquam labore quos, rerum quam aliquid dolorum et fugit.",
-      },
-      {
-        id: 2,
-        facility:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi eligendi neque maiores? Cumque?",
-      },
-      {
-        id: 3,
-        facility:
-          "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis velit ipsam quia?",
-      },
-      {
-        id: 4,
-        facility:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, ex?",
-      },
-      {
-        id: 5,
-        facility:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, necessitatibus reprehenderit?",
-      },
-      {
-        id: 6,
-        facility:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id impedit sequi repellendus cumque dolorem!",
-      },
-      {
-        id: 7,
-        facility:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, totam debitis",
-      },
-      {
-        id: 8,
-        facility:
-          "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti repellat repellendus molestiae.",
-      },
-      {
-        id: 9,
-        facility:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, odit!",
-      },
-      {
-        id: 10,
-        facility:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem dolorem nihil, eius nostrum beatae qui dolores aliquid porro, incidunt dolore natus consectetur dignissimos aspernatur ex magni veritatis voluptas consequatur et odio provident corrupti, consequuntur culpa quod. Excepturi id tenetur unde quisquam, culpa cumque animi ducimus! Quidem dolorem nihil, eius nostrum beatae qui dolores aliquid porro, incidunt dolore natus consectetur dignissimos aspernatur. Excepturi id tenetur unde quisquam, culpa cumque animi ducimus! Quidem dolorem nihil, eius nostrum beatae qui dolores aliquid porro, incidunt dolore natus consectetur dignissimos aspernatur.",
-      },
-    ],
+    learningThings: {
+      desc1:
+        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque omnis eveniet ullam ad laudantium quae sed perferendis? Exercitationem, corporis. Temporibus fugit asperiores velit, illo placeat magni eveniet. Soluta, eveniet dolorem. Ea quisquam labore quos, rerum quam aliquid dolorum et fugit. Temporibus fugit asperiores velit, illo placeat magni eveniet. Soluta, eveniet dolorem. Ea quisquam labore quos, rerum quam aliquid dolorum et fugit.",
+      facilities1: [
+        {
+          id: 1,
+          faci: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi eligendi neque maiores? Cumque?",
+        },
+        {
+          id: 2,
+          faci: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis velit ipsam quia?",
+        },
+        {
+          id: 3,
+          faci: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, ex?",
+        },
+        {
+          id: 4,
+          faci: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, necessitatibus reprehenderit?",
+        },
+      ],
+      facilities2: [
+        {
+          id: 1,
+          faci: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id impedit sequi repellendus cumque dolorem!",
+        },
+        {
+          id: 2,
+          faci: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, totam debitis",
+        },
+        {
+          id: 3,
+          faci: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti repellat repellendus molestiae.",
+        },
+        {
+          id: 9,
+          faci: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, odit!",
+        },
+      ],
+      desc2:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem dolorem nihil, eius nostrum beatae qui dolores aliquid porro, incidunt dolore natus consectetur dignissimos aspernatur ex magni veritatis voluptas consequatur et odio provident corrupti, consequuntur culpa quod. Excepturi id tenetur unde quisquam, culpa cumque animi ducimus! Quidem dolorem nihil, eius nostrum beatae qui dolores aliquid porro, incidunt dolore natus consectetur dignissimos aspernatur. Excepturi id tenetur unde quisquam, culpa cumque animi ducimus! Quidem dolorem nihil, eius nostrum beatae qui dolores aliquid porro, incidunt dolore natus consectetur dignissimos aspernatur.",
+    },
     image:
       "https://www.ed2go.com/common/images/1/16434/c-sharp-for-dummies/jpg.jpg",
     courseContent: {
@@ -600,26 +646,46 @@ export const coursesData = [
       courseDesc:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, debitis sunt? Laborum expedita velit possimus Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, debitis sunt? Laborum expedita velit possimus accusantium, molestias aliquam quam sunt quisquam odit blanditiis maxime ullam nisi voluptates!",
     },
-    requirements: {
-      require1:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi eligendi neque maiores? Cumque?",
-      require2:
-        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis velit ipsam quia?",
-      require3:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, ex?",
-      require4:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, necessitatibus reprehenderit?",
-    },
-    requireDesc: {
-      desc1:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id impedit sequi repellendus cumque dolorem!",
-      desc2:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, totam debitis.",
-      desc3:
-        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti repellat repellendus molestiae.",
-      desc4:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, odit!",
-    },
+    requirements: [
+      {
+        id: 1,
+        require:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi eligendi neque maiores? Cumque?",
+      },
+      {
+        id: 2,
+        require:
+          "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis velit ipsam quia?",
+      },
+      {
+        id: 3,
+        require:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, ex?",
+      },
+      {
+        id: 4,
+        require:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, necessitatibus reprehenderit?",
+      },
+    ],
+    requireDesc: [
+      {
+        id: 1,
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id impedit sequi repellendus cumque dolorem!",
+      },
+      {
+        id: 2,
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, totam debitis.",
+      },
+      {
+        id: 3,
+        desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti repellat repellendus molestiae.",
+      },
+      {
+        id: 4,
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, odit!",
+      },
+    ],
   },
   {
     id: 7,
@@ -641,57 +707,48 @@ export const coursesData = [
       students: "215,102",
       courses: 15,
     },
-    learningThings: [
-      {
-        id: 1,
-        desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque omnis eveniet ullam ad laudantium quae sed perferendis? Exercitationem, corporis. Temporibus fugit asperiores velit, illo placeat magni eveniet. Soluta, eveniet dolorem. Ea quisquam labore quos, rerum quam aliquid dolorum et fugit. Temporibus fugit asperiores velit, illo placeat magni eveniet. Soluta, eveniet dolorem. Ea quisquam labore quos, rerum quam aliquid dolorum et fugit.",
-      },
-      {
-        id: 2,
-        facility:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi eligendi neque maiores? Cumque?",
-      },
-      {
-        id: 3,
-        facility:
-          "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis velit ipsam quia?",
-      },
-      {
-        id: 4,
-        facility:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, ex?",
-      },
-      {
-        id: 5,
-        facility:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, necessitatibus reprehenderit?",
-      },
-      {
-        id: 6,
-        facility:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id impedit sequi repellendus cumque dolorem!",
-      },
-      {
-        id: 7,
-        facility:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, totam debitis",
-      },
-      {
-        id: 8,
-        facility:
-          "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti repellat repellendus molestiae.",
-      },
-      {
-        id: 9,
-        facility:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, odit!",
-      },
-      {
-        id: 10,
-        facility:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem dolorem nihil, eius nostrum beatae qui dolores aliquid porro, incidunt dolore natus consectetur dignissimos aspernatur ex magni veritatis voluptas consequatur et odio provident corrupti, consequuntur culpa quod. Excepturi id tenetur unde quisquam, culpa cumque animi ducimus! Quidem dolorem nihil, eius nostrum beatae qui dolores aliquid porro, incidunt dolore natus consectetur dignissimos aspernatur. Excepturi id tenetur unde quisquam, culpa cumque animi ducimus! Quidem dolorem nihil, eius nostrum beatae qui dolores aliquid porro, incidunt dolore natus consectetur dignissimos aspernatur.",
-      },
-    ],
+    learningThings: {
+      desc1:
+        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque omnis eveniet ullam ad laudantium quae sed perferendis? Exercitationem, corporis. Temporibus fugit asperiores velit, illo placeat magni eveniet. Soluta, eveniet dolorem. Ea quisquam labore quos, rerum quam aliquid dolorum et fugit. Temporibus fugit asperiores velit, illo placeat magni eveniet. Soluta, eveniet dolorem. Ea quisquam labore quos, rerum quam aliquid dolorum et fugit.",
+      facilities1: [
+        {
+          id: 1,
+          faci: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi eligendi neque maiores? Cumque?",
+        },
+        {
+          id: 2,
+          faci: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis velit ipsam quia?",
+        },
+        {
+          id: 3,
+          faci: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, ex?",
+        },
+        {
+          id: 4,
+          faci: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, necessitatibus reprehenderit?",
+        },
+      ],
+      facilities2: [
+        {
+          id: 1,
+          faci: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id impedit sequi repellendus cumque dolorem!",
+        },
+        {
+          id: 2,
+          faci: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, totam debitis",
+        },
+        {
+          id: 3,
+          faci: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti repellat repellendus molestiae.",
+        },
+        {
+          id: 9,
+          faci: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, odit!",
+        },
+      ],
+      desc2:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem dolorem nihil, eius nostrum beatae qui dolores aliquid porro, incidunt dolore natus consectetur dignissimos aspernatur ex magni veritatis voluptas consequatur et odio provident corrupti, consequuntur culpa quod. Excepturi id tenetur unde quisquam, culpa cumque animi ducimus! Quidem dolorem nihil, eius nostrum beatae qui dolores aliquid porro, incidunt dolore natus consectetur dignissimos aspernatur. Excepturi id tenetur unde quisquam, culpa cumque animi ducimus! Quidem dolorem nihil, eius nostrum beatae qui dolores aliquid porro, incidunt dolore natus consectetur dignissimos aspernatur.",
+    },
     image:
       "https://www.clariwell.in/resources/best-java-certification-course-top-training-institute-in-pune.webp",
     courseContent: {
@@ -704,26 +761,46 @@ export const coursesData = [
       courseDesc:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, debitis sunt? Laborum expedita velit possimus Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, debitis sunt? Laborum expedita velit possimus accusantium, molestias aliquam quam sunt quisquam odit blanditiis maxime ullam nisi voluptates!",
     },
-    requirements: {
-      require1:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi eligendi neque maiores? Cumque?",
-      require2:
-        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis velit ipsam quia?",
-      require3:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, ex?",
-      require4:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, necessitatibus reprehenderit?",
-    },
-    requireDesc: {
-      desc1:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id impedit sequi repellendus cumque dolorem!",
-      desc2:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, totam debitis.",
-      desc3:
-        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti repellat repellendus molestiae.",
-      desc4:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, odit!",
-    },
+    requirements: [
+      {
+        id: 1,
+        require:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi eligendi neque maiores? Cumque?",
+      },
+      {
+        id: 2,
+        require:
+          "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis velit ipsam quia?",
+      },
+      {
+        id: 3,
+        require:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, ex?",
+      },
+      {
+        id: 4,
+        require:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, necessitatibus reprehenderit?",
+      },
+    ],
+    requireDesc: [
+      {
+        id: 1,
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id impedit sequi repellendus cumque dolorem!",
+      },
+      {
+        id: 2,
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, totam debitis.",
+      },
+      {
+        id: 3,
+        desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti repellat repellendus molestiae.",
+      },
+      {
+        id: 4,
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, odit!",
+      },
+    ],
   },
   {
     id: 8,
@@ -745,57 +822,48 @@ export const coursesData = [
       students: "215,102",
       courses: 15,
     },
-    learningThings: [
-      {
-        id: 1,
-        desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque omnis eveniet ullam ad laudantium quae sed perferendis? Exercitationem, corporis. Temporibus fugit asperiores velit, illo placeat magni eveniet. Soluta, eveniet dolorem. Ea quisquam labore quos, rerum quam aliquid dolorum et fugit. Temporibus fugit asperiores velit, illo placeat magni eveniet. Soluta, eveniet dolorem. Ea quisquam labore quos, rerum quam aliquid dolorum et fugit.",
-      },
-      {
-        id: 2,
-        facility:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi eligendi neque maiores? Cumque?",
-      },
-      {
-        id: 3,
-        facility:
-          "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis velit ipsam quia?",
-      },
-      {
-        id: 4,
-        facility:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, ex?",
-      },
-      {
-        id: 5,
-        facility:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, necessitatibus reprehenderit?",
-      },
-      {
-        id: 6,
-        facility:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id impedit sequi repellendus cumque dolorem!",
-      },
-      {
-        id: 7,
-        facility:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, totam debitis",
-      },
-      {
-        id: 8,
-        facility:
-          "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti repellat repellendus molestiae.",
-      },
-      {
-        id: 9,
-        facility:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, odit!",
-      },
-      {
-        id: 10,
-        facility:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem dolorem nihil, eius nostrum beatae qui dolores aliquid porro, incidunt dolore natus consectetur dignissimos aspernatur ex magni veritatis voluptas consequatur et odio provident corrupti, consequuntur culpa quod. Excepturi id tenetur unde quisquam, culpa cumque animi ducimus! Quidem dolorem nihil, eius nostrum beatae qui dolores aliquid porro, incidunt dolore natus consectetur dignissimos aspernatur. Excepturi id tenetur unde quisquam, culpa cumque animi ducimus! Quidem dolorem nihil, eius nostrum beatae qui dolores aliquid porro, incidunt dolore natus consectetur dignissimos aspernatur.",
-      },
-    ],
+    learningThings: {
+      desc1:
+        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque omnis eveniet ullam ad laudantium quae sed perferendis? Exercitationem, corporis. Temporibus fugit asperiores velit, illo placeat magni eveniet. Soluta, eveniet dolorem. Ea quisquam labore quos, rerum quam aliquid dolorum et fugit. Temporibus fugit asperiores velit, illo placeat magni eveniet. Soluta, eveniet dolorem. Ea quisquam labore quos, rerum quam aliquid dolorum et fugit.",
+      facilities1: [
+        {
+          id: 1,
+          faci: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi eligendi neque maiores? Cumque?",
+        },
+        {
+          id: 2,
+          faci: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis velit ipsam quia?",
+        },
+        {
+          id: 3,
+          faci: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, ex?",
+        },
+        {
+          id: 4,
+          faci: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, necessitatibus reprehenderit?",
+        },
+      ],
+      facilities2: [
+        {
+          id: 1,
+          faci: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id impedit sequi repellendus cumque dolorem!",
+        },
+        {
+          id: 2,
+          faci: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, totam debitis",
+        },
+        {
+          id: 3,
+          faci: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti repellat repellendus molestiae.",
+        },
+        {
+          id: 9,
+          faci: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, odit!",
+        },
+      ],
+      desc2:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem dolorem nihil, eius nostrum beatae qui dolores aliquid porro, incidunt dolore natus consectetur dignissimos aspernatur ex magni veritatis voluptas consequatur et odio provident corrupti, consequuntur culpa quod. Excepturi id tenetur unde quisquam, culpa cumque animi ducimus! Quidem dolorem nihil, eius nostrum beatae qui dolores aliquid porro, incidunt dolore natus consectetur dignissimos aspernatur. Excepturi id tenetur unde quisquam, culpa cumque animi ducimus! Quidem dolorem nihil, eius nostrum beatae qui dolores aliquid porro, incidunt dolore natus consectetur dignissimos aspernatur.",
+    },
     image: "https://img-b.udemycdn.com/course/750x422/4994252_6808_2.jpg",
     courseContent: {
       intro:
@@ -807,26 +875,46 @@ export const coursesData = [
       courseDesc:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, debitis sunt? Laborum expedita velit possimus Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, debitis sunt? Laborum expedita velit possimus accusantium, molestias aliquam quam sunt quisquam odit blanditiis maxime ullam nisi voluptates!",
     },
-    requirements: {
-      require1:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi eligendi neque maiores? Cumque?",
-      require2:
-        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis velit ipsam quia?",
-      require3:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, ex?",
-      require4:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, necessitatibus reprehenderit?",
-    },
-    requireDesc: {
-      desc1:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id impedit sequi repellendus cumque dolorem!",
-      desc2:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, totam debitis.",
-      desc3:
-        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti repellat repellendus molestiae.",
-      desc4:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, odit!",
-    },
+    requirements: [
+      {
+        id: 1,
+        require:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi eligendi neque maiores? Cumque?",
+      },
+      {
+        id: 2,
+        require:
+          "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis velit ipsam quia?",
+      },
+      {
+        id: 3,
+        require:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, ex?",
+      },
+      {
+        id: 4,
+        require:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, necessitatibus reprehenderit?",
+      },
+    ],
+    requireDesc: [
+      {
+        id: 1,
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id impedit sequi repellendus cumque dolorem!",
+      },
+      {
+        id: 2,
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, totam debitis.",
+      },
+      {
+        id: 3,
+        desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti repellat repellendus molestiae.",
+      },
+      {
+        id: 4,
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, odit!",
+      },
+    ],
   },
   {
     id: 9,
@@ -848,57 +936,48 @@ export const coursesData = [
       students: "215,102",
       courses: 15,
     },
-    learningThings: [
-      {
-        id: 1,
-        desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque omnis eveniet ullam ad laudantium quae sed perferendis? Exercitationem, corporis. Temporibus fugit asperiores velit, illo placeat magni eveniet. Soluta, eveniet dolorem. Ea quisquam labore quos, rerum quam aliquid dolorum et fugit. Temporibus fugit asperiores velit, illo placeat magni eveniet. Soluta, eveniet dolorem. Ea quisquam labore quos, rerum quam aliquid dolorum et fugit.",
-      },
-      {
-        id: 2,
-        facility:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi eligendi neque maiores? Cumque?",
-      },
-      {
-        id: 3,
-        facility:
-          "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis velit ipsam quia?",
-      },
-      {
-        id: 4,
-        facility:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, ex?",
-      },
-      {
-        id: 5,
-        facility:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, necessitatibus reprehenderit?",
-      },
-      {
-        id: 6,
-        facility:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id impedit sequi repellendus cumque dolorem!",
-      },
-      {
-        id: 7,
-        facility:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, totam debitis",
-      },
-      {
-        id: 8,
-        facility:
-          "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti repellat repellendus molestiae.",
-      },
-      {
-        id: 9,
-        facility:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, odit!",
-      },
-      {
-        id: 10,
-        facility:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem dolorem nihil, eius nostrum beatae qui dolores aliquid porro, incidunt dolore natus consectetur dignissimos aspernatur ex magni veritatis voluptas consequatur et odio provident corrupti, consequuntur culpa quod. Excepturi id tenetur unde quisquam, culpa cumque animi ducimus! Quidem dolorem nihil, eius nostrum beatae qui dolores aliquid porro, incidunt dolore natus consectetur dignissimos aspernatur. Excepturi id tenetur unde quisquam, culpa cumque animi ducimus! Quidem dolorem nihil, eius nostrum beatae qui dolores aliquid porro, incidunt dolore natus consectetur dignissimos aspernatur.",
-      },
-    ],
+    learningThings: {
+      desc1:
+        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque omnis eveniet ullam ad laudantium quae sed perferendis? Exercitationem, corporis. Temporibus fugit asperiores velit, illo placeat magni eveniet. Soluta, eveniet dolorem. Ea quisquam labore quos, rerum quam aliquid dolorum et fugit. Temporibus fugit asperiores velit, illo placeat magni eveniet. Soluta, eveniet dolorem. Ea quisquam labore quos, rerum quam aliquid dolorum et fugit.",
+      facilities1: [
+        {
+          id: 1,
+          faci: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi eligendi neque maiores? Cumque?",
+        },
+        {
+          id: 2,
+          faci: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis velit ipsam quia?",
+        },
+        {
+          id: 3,
+          faci: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, ex?",
+        },
+        {
+          id: 4,
+          faci: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, necessitatibus reprehenderit?",
+        },
+      ],
+      facilities2: [
+        {
+          id: 1,
+          faci: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id impedit sequi repellendus cumque dolorem!",
+        },
+        {
+          id: 2,
+          faci: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, totam debitis",
+        },
+        {
+          id: 3,
+          faci: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti repellat repellendus molestiae.",
+        },
+        {
+          id: 9,
+          faci: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, odit!",
+        },
+      ],
+      desc2:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem dolorem nihil, eius nostrum beatae qui dolores aliquid porro, incidunt dolore natus consectetur dignissimos aspernatur ex magni veritatis voluptas consequatur et odio provident corrupti, consequuntur culpa quod. Excepturi id tenetur unde quisquam, culpa cumque animi ducimus! Quidem dolorem nihil, eius nostrum beatae qui dolores aliquid porro, incidunt dolore natus consectetur dignissimos aspernatur. Excepturi id tenetur unde quisquam, culpa cumque animi ducimus! Quidem dolorem nihil, eius nostrum beatae qui dolores aliquid porro, incidunt dolore natus consectetur dignissimos aspernatur.",
+    },
     image:
       "https://www.reliablesoft.net/wp-content/uploads/2022/10/cyber-security-courses.webp",
     courseContent: {
@@ -911,26 +990,46 @@ export const coursesData = [
       courseDesc:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, debitis sunt? Laborum expedita velit possimus Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, debitis sunt? Laborum expedita velit possimus accusantium, molestias aliquam quam sunt quisquam odit blanditiis maxime ullam nisi voluptates!",
     },
-    requirements: {
-      require1:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi eligendi neque maiores? Cumque?",
-      require2:
-        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis velit ipsam quia?",
-      require3:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, ex?",
-      require4:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, necessitatibus reprehenderit?",
-    },
-    requireDesc: {
-      desc1:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id impedit sequi repellendus cumque dolorem!",
-      desc2:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, totam debitis.",
-      desc3:
-        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti repellat repellendus molestiae.",
-      desc4:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, odit!",
-    },
+    requirements: [
+      {
+        id: 1,
+        require:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi eligendi neque maiores? Cumque?",
+      },
+      {
+        id: 2,
+        require:
+          "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis velit ipsam quia?",
+      },
+      {
+        id: 3,
+        require:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, ex?",
+      },
+      {
+        id: 4,
+        require:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, necessitatibus reprehenderit?",
+      },
+    ],
+    requireDesc: [
+      {
+        id: 1,
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id impedit sequi repellendus cumque dolorem!",
+      },
+      {
+        id: 2,
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, totam debitis.",
+      },
+      {
+        id: 3,
+        desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti repellat repellendus molestiae.",
+      },
+      {
+        id: 4,
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, odit!",
+      },
+    ],
   },
   {
     id: 10,
@@ -952,57 +1051,48 @@ export const coursesData = [
       students: "215,102",
       courses: 15,
     },
-    learningThings: [
-      {
-        id: 1,
-        desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque omnis eveniet ullam ad laudantium quae sed perferendis? Exercitationem, corporis. Temporibus fugit asperiores velit, illo placeat magni eveniet. Soluta, eveniet dolorem. Ea quisquam labore quos, rerum quam aliquid dolorum et fugit. Temporibus fugit asperiores velit, illo placeat magni eveniet. Soluta, eveniet dolorem. Ea quisquam labore quos, rerum quam aliquid dolorum et fugit.",
-      },
-      {
-        id: 2,
-        facility:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi eligendi neque maiores? Cumque?",
-      },
-      {
-        id: 3,
-        facility:
-          "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis velit ipsam quia?",
-      },
-      {
-        id: 4,
-        facility:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, ex?",
-      },
-      {
-        id: 5,
-        facility:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, necessitatibus reprehenderit?",
-      },
-      {
-        id: 6,
-        facility:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id impedit sequi repellendus cumque dolorem!",
-      },
-      {
-        id: 7,
-        facility:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, totam debitis",
-      },
-      {
-        id: 8,
-        facility:
-          "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti repellat repellendus molestiae.",
-      },
-      {
-        id: 9,
-        facility:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, odit!",
-      },
-      {
-        id: 10,
-        facility:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem dolorem nihil, eius nostrum beatae qui dolores aliquid porro, incidunt dolore natus consectetur dignissimos aspernatur ex magni veritatis voluptas consequatur et odio provident corrupti, consequuntur culpa quod. Excepturi id tenetur unde quisquam, culpa cumque animi ducimus! Quidem dolorem nihil, eius nostrum beatae qui dolores aliquid porro, incidunt dolore natus consectetur dignissimos aspernatur. Excepturi id tenetur unde quisquam, culpa cumque animi ducimus! Quidem dolorem nihil, eius nostrum beatae qui dolores aliquid porro, incidunt dolore natus consectetur dignissimos aspernatur.",
-      },
-    ],
+    learningThings: {
+      desc1:
+        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque omnis eveniet ullam ad laudantium quae sed perferendis? Exercitationem, corporis. Temporibus fugit asperiores velit, illo placeat magni eveniet. Soluta, eveniet dolorem. Ea quisquam labore quos, rerum quam aliquid dolorum et fugit. Temporibus fugit asperiores velit, illo placeat magni eveniet. Soluta, eveniet dolorem. Ea quisquam labore quos, rerum quam aliquid dolorum et fugit.",
+      facilities1: [
+        {
+          id: 1,
+          faci: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi eligendi neque maiores? Cumque?",
+        },
+        {
+          id: 2,
+          faci: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis velit ipsam quia?",
+        },
+        {
+          id: 3,
+          faci: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, ex?",
+        },
+        {
+          id: 4,
+          faci: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, necessitatibus reprehenderit?",
+        },
+      ],
+      facilities2: [
+        {
+          id: 1,
+          faci: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id impedit sequi repellendus cumque dolorem!",
+        },
+        {
+          id: 2,
+          faci: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, totam debitis",
+        },
+        {
+          id: 3,
+          faci: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti repellat repellendus molestiae.",
+        },
+        {
+          id: 9,
+          faci: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, odit!",
+        },
+      ],
+      desc2:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem dolorem nihil, eius nostrum beatae qui dolores aliquid porro, incidunt dolore natus consectetur dignissimos aspernatur ex magni veritatis voluptas consequatur et odio provident corrupti, consequuntur culpa quod. Excepturi id tenetur unde quisquam, culpa cumque animi ducimus! Quidem dolorem nihil, eius nostrum beatae qui dolores aliquid porro, incidunt dolore natus consectetur dignissimos aspernatur. Excepturi id tenetur unde quisquam, culpa cumque animi ducimus! Quidem dolorem nihil, eius nostrum beatae qui dolores aliquid porro, incidunt dolore natus consectetur dignissimos aspernatur.",
+    },
     image:
       "https://www.interviewbit.com/blog/wp-content/uploads/2022/03/Machine-Learning-Courses-2048x1000.png",
     courseContent: {
@@ -1015,26 +1105,46 @@ export const coursesData = [
       courseDesc:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, debitis sunt? Laborum expedita velit possimus Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, debitis sunt? Laborum expedita velit possimus accusantium, molestias aliquam quam sunt quisquam odit blanditiis maxime ullam nisi voluptates!",
     },
-    requirements: {
-      require1:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi eligendi neque maiores? Cumque?",
-      require2:
-        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis velit ipsam quia?",
-      require3:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, ex?",
-      require4:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, necessitatibus reprehenderit?",
-    },
-    requireDesc: {
-      desc1:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id impedit sequi repellendus cumque dolorem!",
-      desc2:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, totam debitis.",
-      desc3:
-        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti repellat repellendus molestiae.",
-      desc4:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, odit!",
-    },
+    requirements: [
+      {
+        id: 1,
+        require:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi eligendi neque maiores? Cumque?",
+      },
+      {
+        id: 2,
+        require:
+          "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis velit ipsam quia?",
+      },
+      {
+        id: 3,
+        require:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, ex?",
+      },
+      {
+        id: 4,
+        require:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, necessitatibus reprehenderit?",
+      },
+    ],
+    requireDesc: [
+      {
+        id: 1,
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id impedit sequi repellendus cumque dolorem!",
+      },
+      {
+        id: 2,
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, totam debitis.",
+      },
+      {
+        id: 3,
+        desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti repellat repellendus molestiae.",
+      },
+      {
+        id: 4,
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, odit!",
+      },
+    ],
   },
   {
     id: 11,
@@ -1056,57 +1166,48 @@ export const coursesData = [
       students: "215,102",
       courses: 15,
     },
-    learningThings: [
-      {
-        id: 1,
-        desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque omnis eveniet ullam ad laudantium quae sed perferendis? Exercitationem, corporis. Temporibus fugit asperiores velit, illo placeat magni eveniet. Soluta, eveniet dolorem. Ea quisquam labore quos, rerum quam aliquid dolorum et fugit. Temporibus fugit asperiores velit, illo placeat magni eveniet. Soluta, eveniet dolorem. Ea quisquam labore quos, rerum quam aliquid dolorum et fugit.",
-      },
-      {
-        id: 2,
-        facility:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi eligendi neque maiores? Cumque?",
-      },
-      {
-        id: 3,
-        facility:
-          "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis velit ipsam quia?",
-      },
-      {
-        id: 4,
-        facility:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, ex?",
-      },
-      {
-        id: 5,
-        facility:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, necessitatibus reprehenderit?",
-      },
-      {
-        id: 6,
-        facility:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id impedit sequi repellendus cumque dolorem!",
-      },
-      {
-        id: 7,
-        facility:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, totam debitis",
-      },
-      {
-        id: 8,
-        facility:
-          "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti repellat repellendus molestiae.",
-      },
-      {
-        id: 9,
-        facility:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, odit!",
-      },
-      {
-        id: 10,
-        facility:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem dolorem nihil, eius nostrum beatae qui dolores aliquid porro, incidunt dolore natus consectetur dignissimos aspernatur ex magni veritatis voluptas consequatur et odio provident corrupti, consequuntur culpa quod. Excepturi id tenetur unde quisquam, culpa cumque animi ducimus! Quidem dolorem nihil, eius nostrum beatae qui dolores aliquid porro, incidunt dolore natus consectetur dignissimos aspernatur. Excepturi id tenetur unde quisquam, culpa cumque animi ducimus! Quidem dolorem nihil, eius nostrum beatae qui dolores aliquid porro, incidunt dolore natus consectetur dignissimos aspernatur.",
-      },
-    ],
+    learningThings: {
+      desc1:
+        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque omnis eveniet ullam ad laudantium quae sed perferendis? Exercitationem, corporis. Temporibus fugit asperiores velit, illo placeat magni eveniet. Soluta, eveniet dolorem. Ea quisquam labore quos, rerum quam aliquid dolorum et fugit. Temporibus fugit asperiores velit, illo placeat magni eveniet. Soluta, eveniet dolorem. Ea quisquam labore quos, rerum quam aliquid dolorum et fugit.",
+      facilities1: [
+        {
+          id: 1,
+          faci: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi eligendi neque maiores? Cumque?",
+        },
+        {
+          id: 2,
+          faci: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis velit ipsam quia?",
+        },
+        {
+          id: 3,
+          faci: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, ex?",
+        },
+        {
+          id: 4,
+          faci: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, necessitatibus reprehenderit?",
+        },
+      ],
+      facilities2: [
+        {
+          id: 1,
+          faci: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id impedit sequi repellendus cumque dolorem!",
+        },
+        {
+          id: 2,
+          faci: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, totam debitis",
+        },
+        {
+          id: 3,
+          faci: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti repellat repellendus molestiae.",
+        },
+        {
+          id: 9,
+          faci: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, odit!",
+        },
+      ],
+      desc2:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem dolorem nihil, eius nostrum beatae qui dolores aliquid porro, incidunt dolore natus consectetur dignissimos aspernatur ex magni veritatis voluptas consequatur et odio provident corrupti, consequuntur culpa quod. Excepturi id tenetur unde quisquam, culpa cumque animi ducimus! Quidem dolorem nihil, eius nostrum beatae qui dolores aliquid porro, incidunt dolore natus consectetur dignissimos aspernatur. Excepturi id tenetur unde quisquam, culpa cumque animi ducimus! Quidem dolorem nihil, eius nostrum beatae qui dolores aliquid porro, incidunt dolore natus consectetur dignissimos aspernatur.",
+    },
     image:
       "https://admin.vinsys.com/content/media/uploads/2020/12/Certified-Ethical-Hacking.jpg",
     courseContent: {
@@ -1119,26 +1220,46 @@ export const coursesData = [
       courseDesc:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, debitis sunt? Laborum expedita velit possimus Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, debitis sunt? Laborum expedita velit possimus accusantium, molestias aliquam quam sunt quisquam odit blanditiis maxime ullam nisi voluptates!",
     },
-    requirements: {
-      require1:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi eligendi neque maiores? Cumque?",
-      require2:
-        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis velit ipsam quia?",
-      require3:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, ex?",
-      require4:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, necessitatibus reprehenderit?",
-    },
-    requireDesc: {
-      desc1:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id impedit sequi repellendus cumque dolorem!",
-      desc2:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, totam debitis.",
-      desc3:
-        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti repellat repellendus molestiae.",
-      desc4:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, odit!",
-    },
+    requirements: [
+      {
+        id: 1,
+        require:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi eligendi neque maiores? Cumque?",
+      },
+      {
+        id: 2,
+        require:
+          "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis velit ipsam quia?",
+      },
+      {
+        id: 3,
+        require:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, ex?",
+      },
+      {
+        id: 4,
+        require:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, necessitatibus reprehenderit?",
+      },
+    ],
+    requireDesc: [
+      {
+        id: 1,
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id impedit sequi repellendus cumque dolorem!",
+      },
+      {
+        id: 2,
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, totam debitis.",
+      },
+      {
+        id: 3,
+        desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti repellat repellendus molestiae.",
+      },
+      {
+        id: 4,
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, odit!",
+      },
+    ],
   },
   {
     id: 12,
@@ -1160,57 +1281,48 @@ export const coursesData = [
       students: "215,102",
       courses: 15,
     },
-    learningThings: [
-      {
-        id: 1,
-        desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque omnis eveniet ullam ad laudantium quae sed perferendis? Exercitationem, corporis. Temporibus fugit asperiores velit, illo placeat magni eveniet. Soluta, eveniet dolorem. Ea quisquam labore quos, rerum quam aliquid dolorum et fugit. Temporibus fugit asperiores velit, illo placeat magni eveniet. Soluta, eveniet dolorem. Ea quisquam labore quos, rerum quam aliquid dolorum et fugit.",
-      },
-      {
-        id: 2,
-        facility:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi eligendi neque maiores? Cumque?",
-      },
-      {
-        id: 3,
-        facility:
-          "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis velit ipsam quia?",
-      },
-      {
-        id: 4,
-        facility:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, ex?",
-      },
-      {
-        id: 5,
-        facility:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, necessitatibus reprehenderit?",
-      },
-      {
-        id: 6,
-        facility:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id impedit sequi repellendus cumque dolorem!",
-      },
-      {
-        id: 7,
-        facility:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, totam debitis",
-      },
-      {
-        id: 8,
-        facility:
-          "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti repellat repellendus molestiae.",
-      },
-      {
-        id: 9,
-        facility:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, odit!",
-      },
-      {
-        id: 10,
-        facility:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem dolorem nihil, eius nostrum beatae qui dolores aliquid porro, incidunt dolore natus consectetur dignissimos aspernatur ex magni veritatis voluptas consequatur et odio provident corrupti, consequuntur culpa quod. Excepturi id tenetur unde quisquam, culpa cumque animi ducimus! Quidem dolorem nihil, eius nostrum beatae qui dolores aliquid porro, incidunt dolore natus consectetur dignissimos aspernatur. Excepturi id tenetur unde quisquam, culpa cumque animi ducimus! Quidem dolorem nihil, eius nostrum beatae qui dolores aliquid porro, incidunt dolore natus consectetur dignissimos aspernatur.",
-      },
-    ],
+    learningThings: {
+      desc1:
+        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque omnis eveniet ullam ad laudantium quae sed perferendis? Exercitationem, corporis. Temporibus fugit asperiores velit, illo placeat magni eveniet. Soluta, eveniet dolorem. Ea quisquam labore quos, rerum quam aliquid dolorum et fugit. Temporibus fugit asperiores velit, illo placeat magni eveniet. Soluta, eveniet dolorem. Ea quisquam labore quos, rerum quam aliquid dolorum et fugit.",
+      facilities1: [
+        {
+          id: 1,
+          faci: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi eligendi neque maiores? Cumque?",
+        },
+        {
+          id: 2,
+          faci: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis velit ipsam quia?",
+        },
+        {
+          id: 3,
+          faci: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, ex?",
+        },
+        {
+          id: 4,
+          faci: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, necessitatibus reprehenderit?",
+        },
+      ],
+      facilities2: [
+        {
+          id: 1,
+          faci: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id impedit sequi repellendus cumque dolorem!",
+        },
+        {
+          id: 2,
+          faci: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, totam debitis",
+        },
+        {
+          id: 3,
+          faci: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti repellat repellendus molestiae.",
+        },
+        {
+          id: 9,
+          faci: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, odit!",
+        },
+      ],
+      desc2:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem dolorem nihil, eius nostrum beatae qui dolores aliquid porro, incidunt dolore natus consectetur dignissimos aspernatur ex magni veritatis voluptas consequatur et odio provident corrupti, consequuntur culpa quod. Excepturi id tenetur unde quisquam, culpa cumque animi ducimus! Quidem dolorem nihil, eius nostrum beatae qui dolores aliquid porro, incidunt dolore natus consectetur dignissimos aspernatur. Excepturi id tenetur unde quisquam, culpa cumque animi ducimus! Quidem dolorem nihil, eius nostrum beatae qui dolores aliquid porro, incidunt dolore natus consectetur dignissimos aspernatur.",
+    },
     image: "https://phitron.io/thumbnail.png",
     courseContent: {
       intro:
@@ -1222,25 +1334,45 @@ export const coursesData = [
       courseDesc:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, debitis sunt? Laborum expedita velit possimus Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, debitis sunt? Laborum expedita velit possimus accusantium, molestias aliquam quam sunt quisquam odit blanditiis maxime ullam nisi voluptates!",
     },
-    requirements: {
-      require1:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi eligendi neque maiores? Cumque?",
-      require2:
-        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis velit ipsam quia?",
-      require3:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, ex?",
-      require4:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, necessitatibus reprehenderit?",
-    },
-    requireDesc: {
-      desc1:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id impedit sequi repellendus cumque dolorem!",
-      desc2:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, totam debitis.",
-      desc3:
-        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti repellat repellendus molestiae.",
-      desc4:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, odit!",
-    },
+    requirements: [
+      {
+        id: 1,
+        require:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi eligendi neque maiores? Cumque?",
+      },
+      {
+        id: 2,
+        require:
+          "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis velit ipsam quia?",
+      },
+      {
+        id: 3,
+        require:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, ex?",
+      },
+      {
+        id: 4,
+        require:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, necessitatibus reprehenderit?",
+      },
+    ],
+    requireDesc: [
+      {
+        id: 1,
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id impedit sequi repellendus cumque dolorem!",
+      },
+      {
+        id: 2,
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, totam debitis.",
+      },
+      {
+        id: 3,
+        desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti repellat repellendus molestiae.",
+      },
+      {
+        id: 4,
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, odit!",
+      },
+    ],
   },
 ];
