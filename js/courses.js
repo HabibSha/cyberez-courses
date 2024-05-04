@@ -68,22 +68,18 @@ const loadCourses = () => {
       <p>
         ${shortDesc}
       </p>
-      <div class="will_learn">
-        <i class="fa-solid fa-check"></i>
-        <p>
-          ${requireDesc.desc1}
-        </p>
-      </div>
-      <div class="will_learn">
-        <i class="fa-solid fa-check"></i>
-        <p>${requireDesc.desc2}</p>
-      </div>
-      <div class="will_learn">
-        <i class="fa-solid fa-check"></i>
-        <p>
-        ${requireDesc.desc3}
-        </p>
-      </div>
+      
+        ${requireDesc
+          .map((description) => {
+            return `<div class="will_learn">
+          <i class="fa-solid fa-check"></i>
+          <p>
+            ${description.desc}
+          </p></div>`;
+          })
+          .slice(0, 3)
+          .join("")}
+      
       <div class="hover_button">
         <button class="btn">Add to cart</button>
       </div>

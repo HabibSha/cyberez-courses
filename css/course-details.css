@@ -659,7 +659,7 @@ span.grad::before {
 
 .more-course_container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   justify-items: center;
   gap: 2rem;
   margin-top: 2rem;
@@ -678,7 +678,6 @@ span.grad::before {
   padding: 0.6rem;
   border: 1px solid rgb(65, 64, 64);
   border-radius: 0.3rem;
-  cursor: pointer;
   /* z-index: 1; */
   transition: var(--transition);
 }
@@ -760,6 +759,12 @@ span.grad::before {
   color: var(--color-offwhite);
 }
 
+.more-course_details .item_flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .more-course_details h6 {
   color: var(--color-white);
   font-size: 1.1rem;
@@ -771,6 +776,33 @@ span.grad::before {
   color: var(--color-offwhite);
   text-decoration: line-through;
   margin-left: 1rem;
+}
+
+.more-course_details .item_flex .details_btn {
+  position: relative;
+  font-size: 0.8rem;
+  font-weight: 500;
+  background-image: linear-gradient(
+    to right,
+    #00d2ff 0%,
+    #3a7bd5 51%,
+    #00d2ff 100%
+  );
+  padding: 0.6rem 1.3rem;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.35s;
+  background-size: 200% auto;
+  color: var(--color-white);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.more-course_details .item_flex .details_btn:hover {
+  background-position: right center;
+  color: var(--color-white);
+  text-decoration: none;
 }
 
 /* ============== Price List ============== */
@@ -956,9 +988,41 @@ ul.course_info li span {
 
 .related_courses_content {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 2.5rem;
   margin-top: 2rem;
+}
+
+.related_courses .item_flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.related_courses .item_flex .details_btn {
+  position: relative;
+  font-size: 0.8rem;
+  font-weight: 500;
+  background-image: linear-gradient(
+    to right,
+    #00d2ff 0%,
+    #3a7bd5 51%,
+    #00d2ff 100%
+  );
+  padding: 0.6rem 1.3rem;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.35s;
+  background-size: 200% auto;
+  color: var(--color-white);
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.related_courses .item_flex .details_btn:hover {
+  background-position: right center;
+  color: var(--color-white);
+  text-decoration: none;
 }
 
 /* ============ Device max width 1399px ================== */
@@ -985,6 +1049,18 @@ ul.course_info li span {
 
   .identity p.desc {
     margin-top: 1rem;
+  }
+
+  /* more course by instructor */
+  .more-course_container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.35rem;
+  }
+
+  /* ================ Related Courses ================ */
+  .related_courses_content {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.35rem;
   }
 }
 
@@ -1104,10 +1180,6 @@ ul.course_info li span {
     font-size: 1.65rem;
   }
 
-  .more-course_container {
-    gap: 1.5rem;
-  }
-
   .more-course_details {
     margin-top: 1rem;
   }
@@ -1172,12 +1244,15 @@ ul.course_info li span {
     transform: translateY(0);
   }
 
+  /* more course by instructor */
+  .more-course_container {
+    gap: 1.2rem;
+  }
+
   /* ================ Related Courses ================ */
   .related_courses_content {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2.5rem;
-    margin-top: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(13.55rem, 1fr));
+    gap: 1.2rem;
   }
 }
 
@@ -1215,9 +1290,10 @@ ul.course_info li span {
     font-size: 1.7rem;
   }
 
-  /* ============= Related Courses =============== */
+  /* ================ Related Courses ================ */
   .related_courses_content {
-    gap: 1.5rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.2rem;
   }
 
   .related_courses_container p.similar_courses {
@@ -1292,11 +1368,8 @@ ul.course_info li span {
 
   /* ========== More Course by Instructor ========== */
   .more-course_container {
-    display: grid;
     grid-template-columns: 1fr;
-    justify-items: center;
     gap: 2rem;
-    margin-top: 2rem;
   }
 
   .more-course p.top_course {

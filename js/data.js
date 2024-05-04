@@ -9,15 +9,15 @@ export const coursesData = [
     reviews: "175,535",
     students: "255,336",
     instructor: {
-      name: "Rosemary Mante",
-      profession: "Math Teacher",
-      image: "../images/testimonial2.png",
+      name: "Marianne Bode",
+      profession: "Professional Developer",
+      image: "../images/testimonial4.png",
       title:
         "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat quaerat beatae quae quos, aperiam expedita non!",
-      reviews: "125,321",
-      rating: 4.8,
-      students: "215,102",
-      courses: 15,
+      reviews: "167,876",
+      rating: 4.9,
+      students: "291,211",
+      courses: 13,
     },
     learningThings: {
       desc1:
@@ -130,7 +130,7 @@ export const coursesData = [
       title:
         "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat quaerat beatae quae quos, aperiam expedita non!",
       reviews: "125,321",
-      rating: 4.8,
+      rating: 4.7,
       students: "215,102",
       courses: 15,
     },
@@ -239,15 +239,15 @@ export const coursesData = [
     reviews: "203,122",
     students: "327,298",
     instructor: {
-      name: "Rosemary Mante",
-      profession: "Math Teacher",
-      image: "../images/testimonial2.png",
+      name: "Marianne Bode",
+      profession: "Professional Developer",
+      image: "../images/testimonial4.png",
       title:
         "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat quaerat beatae quae quos, aperiam expedita non!",
-      reviews: "125,321",
-      rating: 4.8,
-      students: "215,102",
-      courses: 15,
+      reviews: "167,876",
+      rating: 4.9,
+      students: "291,211",
+      courses: 13,
     },
     learningThings: {
       desc1:
@@ -353,15 +353,15 @@ export const coursesData = [
     reviews: "145,421",
     students: "210,310",
     instructor: {
-      name: "Rosemary Mante",
-      profession: "Math Teacher",
-      image: "../images/testimonial2.png",
+      name: "Regina Weissnat",
+      profession: "Phitron Dev",
+      image: "../images/testimonial3.png",
       title:
         "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat quaerat beatae quae quos, aperiam expedita non!",
-      reviews: "125,321",
-      rating: 4.7,
-      students: "215,102",
-      courses: 15,
+      reviews: "103,522",
+      rating: 4.8,
+      students: "215,758",
+      courses: 12,
     },
     learningThings: {
       desc1:
@@ -467,15 +467,15 @@ export const coursesData = [
     reviews: "125,100",
     students: "199,921",
     instructor: {
-      name: "Rosemary Mante",
-      profession: "Math Teacher",
-      image: "../images/testimonial2.png",
+      name: "Marianne Bode",
+      profession: "Professional Developer",
+      image: "../images/testimonial4.png",
       title:
         "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat quaerat beatae quae quos, aperiam expedita non!",
-      reviews: "125,321",
-      rating: 4.7,
-      students: "215,102",
-      courses: 15,
+      reviews: "167,876",
+      rating: 4.9,
+      students: "291,211",
+      courses: 13,
     },
     learningThings: {
       desc1:
@@ -697,15 +697,15 @@ export const coursesData = [
     reviews: "136,112",
     students: "172,827",
     instructor: {
-      name: "Rosemary Mante",
-      profession: "Math Teacher",
-      image: "../images/testimonial2.png",
+      name: "Regina Weissnat",
+      profession: "Phitron Dev",
+      image: "../images/testimonial3.png",
       title:
         "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat quaerat beatae quae quos, aperiam expedita non!",
-      reviews: "125,321",
-      rating: 4.7,
-      students: "215,102",
-      courses: 15,
+      reviews: "103,522",
+      rating: 4.8,
+      students: "215,758",
+      courses: 12,
     },
     learningThings: {
       desc1:
@@ -1041,15 +1041,15 @@ export const coursesData = [
     reviews: "112,411",
     students: "211,104",
     instructor: {
-      name: "Rosemary Mante",
-      profession: "Math Teacher",
-      image: "../images/testimonial2.png",
+      name: "Regina Weissnat",
+      profession: "Phitron Dev",
+      image: "../images/testimonial3.png",
       title:
         "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat quaerat beatae quae quos, aperiam expedita non!",
-      reviews: "125,321",
-      rating: 4.7,
-      students: "215,102",
-      courses: 15,
+      reviews: "103,522",
+      rating: 4.8,
+      students: "215,758",
+      courses: 12,
     },
     learningThings: {
       desc1:
@@ -1156,15 +1156,15 @@ export const coursesData = [
     reviews: "45,120",
     students: "96,231",
     instructor: {
-      name: "Rosemary Mante",
-      profession: "Math Teacher",
-      image: "../images/testimonial2.png",
+      name: "Regina Weissnat",
+      profession: "Phitron Dev",
+      image: "../images/testimonial3.png",
       title:
         "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat quaerat beatae quae quos, aperiam expedita non!",
-      reviews: "125,321",
-      rating: 4.7,
-      students: "215,102",
-      courses: 15,
+      reviews: "103,522",
+      rating: 4.8,
+      students: "215,758",
+      courses: 12,
     },
     learningThings: {
       desc1:
@@ -1271,15 +1271,15 @@ export const coursesData = [
     reviews: "113,452",
     students: "178,145",
     instructor: {
-      name: "Rosemary Mante",
-      profession: "Math Teacher",
-      image: "../images/testimonial2.png",
+      name: "Marianne Bode",
+      profession: "Professional Developer",
+      image: "../images/testimonial4.png",
       title:
         "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat quaerat beatae quae quos, aperiam expedita non!",
-      reviews: "125,321",
-      rating: 4.7,
-      students: "215,102",
-      courses: 15,
+      reviews: "167,876",
+      rating: 4.9,
+      students: "291,211",
+      courses: 13,
     },
     learningThings: {
       desc1:

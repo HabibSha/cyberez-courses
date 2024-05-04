@@ -1,48 +1,8 @@
 import { coursesData } from "./data.js";
 
-// For Rating Progress Bar
-// const data = [
-//   { star: 5, count: 514 },
-//   { star: 4, count: 71 },
-//   { star: 3, count: 312 },
-//   { star: 2, count: 11 },
-//   { star: 1, count: 64 },
-// ];
-
-// let total_rating = 0;
-// let rating_based_on_stars = 0;
-
-// data.forEach((rating, index) => {
-//   total_rating += rating.count;
-//   rating_based_on_stars += rating.count * rating.star;
-// });
-
-// data.forEach((rating) => {
-//   const { star, count } = rating;
-
-//   const percentage = (count / total_rating) * 100;
-
-//   let rating_progress = `
-//     <div class="rating_progress-value">
-//        <p>
-//          ${star}
-//          <span class="star">&#9733;</span>
-//          </p>
-//          <div class="progress">
-//             <div class="bar" style="width:${percentage}%";></div>
-//          </div>
-//         <p>${percentage.toFixed()}%</p>
-//     </div>
-//   `;
-
-//   document.querySelector(".rating_progress").innerHTML += rating_progress;
-// });
-
-// const average_rating = (rating_based_on_stars / total_rating).toFixed(1);
-// document.querySelector(".total_rating_value p").innerHTML += total_rating;
 // document.querySelector(".total_rating-value h2").innerHTML = average_rating;
 
-// dynamically add data for course details
+// get id from url
 const getCourseId = () => {
   const urlParams = new URLSearchParams(window.location.search);
   return urlParams.get("id");
@@ -112,7 +72,15 @@ loadCourseTitle();
 
 const loadCourseDetails = () => {
   const courseId = getCourseId();
+
+  // showing single course based on id
   const course = coursesData.find((c) => c.id.toString() === courseId);
+
+  // filtering all courses of instructor
+  const instructorCourses = coursesData.filter(
+    (filteredData) => filteredData.instructor.name === course.instructor.name
+  );
+  // console.log(instructorCourses);
   const courseContainer = document.querySelector(".course_container");
 
   if (course) {
@@ -386,25 +354,30 @@ const loadCourseDetails = () => {
       <p class="top_course">
         Top Course
       </p>
-      <h4>More Course By <span class="name">Rosemary Mante</span></h4>
+      <h4>More Course By <span class="name">${instructor.name}</span></h4>
       <div class="more-course_container">
-        <div class="more-course_body">
-          <div class="more-course_image">
-            <img
-              src="https://resources.reed.co.uk/courses/coursemedia/436537/6a1e69a6-6922-43ab-bc85-5d8548a32e20_cover.webp"
-              alt="Courses"
-              class="image"
-            />
-          </div>
-          <div class="more-course_details">
-            <h5>HTML Full Course Milestone Online</h5>
-            <p class="small">Lorem ipsum dolor sit amet consectetur.</p class="small">
-            <div class="course_instructor">
-              <img src="./images/testimonial2.png" alt="Instructor" />
-              <p>Rosemary Mante</p>
+        ${instructorCourses
+          .map((instructorCourse) => {
+            const { id, name, subtitle, instructor, image, rating, reviews } =
+              instructorCourse;
+            return `
+          <div class="more-course_body">
+            <div class="more-course_image">
+              <img
+                src=${image}
+                alt="Courses"
+                class="image"
+              />
             </div>
-            <p>
-              4.7
+            <div class="more-course_details">
+                <h5>${name}</h5>
+                <p class="small">${subtitle}</p class="small">
+                <div class="course_instructor">
+                 <img src=${instructor.image} alt="Instructor" />
+                  <p>${instructor.name}</p>
+                </div>
+              <p>
+              ${rating}
               <span class="icon_list"
                 ><i class="fa-solid fa-star"></i
                 ><i class="fa-solid fa-star"></i
@@ -412,42 +385,18 @@ const loadCourseDetails = () => {
                 ><i class="fa-solid fa-star"></i
                 ><i class="fa-regular fa-star"></i
               ></span>
-              <span class="total_review">(201,158)</span>
-            </p>
-            <h6>$12.99 <span class="strike">$47.99</span></h6>
+              <span class="total_review">(${reviews})</span>
+              </p>
+              <div class="item_flex">
+                <h6>$12.99 <span class="strike">$47.99</span></h6>
+                <button data-id="${id}" class="details_btn">Details &#8594;</button>
+              </div>
           </div>
-        </div>
-        <div class="more-course_body">
-          <div class="more-course_image">
-            <img
-              src="https://cdn.hackr.io/uploads/posts/large/1654234535LI9mLOk6yE.png"
-              alt="Courses"
-              class="image"
-            />
-          </div>
-          <div class="more-course_details">
-            <h5>12 Best JavaScript Courses Online in 2024 [Free + Paid]</h5>
-            <p class="small">Lorem ipsum dolor sit amet consectetur.</p class="small">
-            <div class="course_instructor">
-              <img src="./images/testimonial2.png" alt="Instructor" />
-              <p>Rosemary Mante</p>
-            </div>
-            <p>
-              4.7
-              <span class="icon_list"
-                ><i class="fa-solid fa-star"></i
-                ><i class="fa-solid fa-star"></i
-                ><i class="fa-solid fa-star"></i
-                ><i class="fa-solid fa-star"></i
-                ><i class="fa-regular fa-star"></i
-              ></span>
-              <span class="total_review">(168,105)</span>
-            </p>
-            <h6>$12.99 <span class="strike">$47.99</span></h6>
-          </div>
-        </div>
+          </div>`;
+          })
+          .slice(0, 3)
+          .join("")}
       </div>
-    </div>
   </article>`;
 
     // Show more/less functionality
@@ -478,9 +427,126 @@ const loadCourseDetails = () => {
         }
       });
     });
+
+    // For Rating Progress Bar
+    const data = [
+      { star: 5, count: 514 },
+      { star: 4, count: 71 },
+      { star: 3, count: 312 },
+      { star: 2, count: 11 },
+      { star: 1, count: 64 },
+    ];
+
+    let total_rating = 0;
+    let rating_based_on_stars = 0;
+
+    data.forEach((rating) => {
+      total_rating += rating.count;
+      rating_based_on_stars += rating.count * rating.star;
+    });
+
+    const ratingProgressHTML = data
+      .map((rating) => {
+        const { star, count } = rating;
+        const percentage = (count / total_rating) * 100;
+        return `
+            <div class="rating_progress-value">
+              <p>${star}<span class="star">&#9733;</span></p>
+              <div class="progress">
+                <div class="bar" style="width:${percentage}%"></div>
+              </div>
+              <p>${percentage.toFixed()}%</p>
+            </div>
+          `;
+      })
+      .join("");
+
+    courseContainer.querySelector(".rating_progress").innerHTML =
+      ratingProgressHTML;
+
+    // more course details page
+    document.querySelectorAll(".details_btn").forEach((button) => {
+      button.addEventListener("click", function () {
+        const courseId = this.getAttribute("data-id");
+        window.location.href = `/course-details.html?id=${courseId}`;
+        console.log(window.location.href);
+      });
+    });
   } else {
     courseContainer.innerHTML = `<p>Course not found.</p>`;
   }
 };
 
 loadCourseDetails();
+
+// related courses functionality
+const loadRelatedCourses = () => {
+  const courseId = getCourseId();
+
+  // showing single course based on id
+  const course = coursesData.find((c) => c.id.toString() === courseId);
+
+  // filtering all related courses without current id
+  const relatedCourses = coursesData.filter(
+    (filteredData) => filteredData.id !== course.id
+  );
+  // console.log(relatedCourses);
+  const relatedCoursesContent = document.querySelector(
+    ".related_courses_content"
+  );
+
+  if (relatedCourses) {
+    relatedCoursesContent.innerHTML = `${relatedCourses
+      .map((relatedCourse) => {
+        const { id, image, name, subtitle, rating, reviews, instructor } =
+          relatedCourse;
+        return `<div class="related-courses_body more-course_body">
+      <div class="related-courses_image more-course_image">
+        <img
+          src=${image}
+          alt="Courses"
+          class="image"
+        />
+      </div>
+      <div class="related-courses_details more-course_details">
+        <h5>${name}</h5>
+        <p class="small">${subtitle}</p class="small">
+        <div class="related-courses_instructor course_instructor">
+          <img src=${instructor.image} alt="Instructor" />
+          <p>${instructor.name}</p>
+        </div>
+        <p>
+          ${rating}
+          <span class="icon_list"
+            ><i class="fa-solid fa-star"></i
+            ><i class="fa-solid fa-star"></i
+            ><i class="fa-solid fa-star"></i
+            ><i class="fa-solid fa-star"></i
+            ><i class="fa-regular fa-star"></i
+          ></span>
+          <span class="total_review">(${reviews})</span>
+        </p>
+        <div class="item_flex">
+      <h6>$12.99 <span class="strike">$47.99</span></h6>
+      <button data-id="${id}" class="details_btn">Details &#8594;</button>
+      </div>
+      </div>
+    </div>`;
+      })
+      .slice(3, 7)
+      .join("")}`;
+
+    // related course details page
+    document.querySelectorAll(".details_btn").forEach((button) => {
+      button.addEventListener("click", function () {
+        const courseId = this.getAttribute("data-id");
+        window.location.href = `/course-details.html?id=${courseId}`;
+        console.log(window.location.href);
+      });
+    });
+  } else {
+    relatedCoursesContent.innerHTML = `<p>Related courses not found.</p>`;
+  }
+};
+
+loadRelatedCourses();
