@@ -2,10 +2,34 @@ const email = document.getElementById("email");
 const password = document.getElementById("password");
 const form = document.getElementById("form");
 
+const formValues = {
+  email: "",
+  password: "",
+};
+
+// Function to update formValues object
+const updateFormValues = (key, value) => {
+  formValues[key] = value;
+};
+
+// Adding event listeners for the change event on each input
+email.addEventListener("change", (e) =>
+  updateFormValues("email", e.target.value)
+);
+password.addEventListener("change", (e) =>
+  updateFormValues("password", e.target.value)
+);
+
 form.addEventListener("submit", (event) => {
   event.preventDefault();
-
-  inputsValidate();
+  if (inputsValidate()) {
+    console.log(formValues);
+    // Clear input fields after form submission
+    username.value = "";
+    email.value = "";
+    password.value = "";
+    confirmPassword.value = "";
+  }
 });
 
 const errorMessage = (element, message) => {
@@ -33,20 +57,27 @@ const isValidEmail = (email) => {
 const inputsValidate = () => {
   const emailValue = email.value.trim();
   const passwordValue = password.value.trim();
+  let isValid = true;
 
   if (emailValue === "") {
     errorMessage(email, "Email is required");
+    isValid = false;
   } else if (!isValidEmail(emailValue)) {
     errorMessage(email, "Please enter a valid email address");
+    isValid = false;
   } else {
     successMessage(email);
   }
 
   if (passwordValue === "") {
     errorMessage(password, "Password is required");
+    isValid = false;
   } else if (passwordValue.length < 6) {
     errorMessage(password, "Password must be at least 6 characters");
+    isValid = false;
   } else {
     successMessage(password);
   }
+
+  return isValid;
 };
