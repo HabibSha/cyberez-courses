@@ -72,19 +72,33 @@
           <div class="register_form">
             <h2>SignUp</h2>
             <form action="#">
-              <input type="text" name="name" id="name" placeholder="Name" />
-              <input type="email" name="email" id="email" placeholder="Email" />
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Name"
+                required
+              />
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Email"
+                required
+              />
               <input
                 type="password"
                 name="password"
                 id="password"
                 placeholder="Password"
+                required
               />
               <input
                 type="password"
                 name="confirmPassword"
                 id="confirmPassword"
                 placeholder="Confirm Password"
+                required
               />
               <div class="terms_conditions">
                 <input type="checkbox" id="checkbox" />
@@ -93,7 +107,11 @@
                 >
               </div>
               <div>
-                <a href="#" class="btn_primary">Register</a>
+                <a href="#"
+                  ><button type="submit" class="btn_primary">
+                    Register
+                  </button></a
+                >
               </div>
               <div class="if_account">
                 <p>

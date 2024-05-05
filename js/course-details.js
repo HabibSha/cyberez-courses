@@ -1,22 +1,22 @@
 import { coursesData } from "./data.js";
 
 // document.querySelector(".total_rating-value h2").innerHTML = average_rating;
+document.addEventListener("DOMContentLoaded", function () {
+  // get id from url
+  const getCourseId = () => {
+    const urlParams = new URLSearchParams(window.location.search);
+    return urlParams.get("id");
+  };
 
-// get id from url
-const getCourseId = () => {
-  const urlParams = new URLSearchParams(window.location.search);
-  return urlParams.get("id");
-};
+  // upper page image overlay and course title
+  const loadCourseTitle = () => {
+    const courseId = getCourseId();
+    const course = coursesData.find((c) => c.id.toString() === courseId);
+    const courseTitle = document.querySelector(".course_title");
 
-// upper page image overlay and course title
-const loadCourseTitle = () => {
-  const courseId = getCourseId();
-  const course = coursesData.find((c) => c.id.toString() === courseId);
-  const courseTitle = document.querySelector(".course_title");
-
-  if (course) {
-    const { name, shortDesc, rating, reviews, students, instructor } = course;
-    courseTitle.innerHTML = `<div class="course_summary">
+    if (course) {
+      const { name, shortDesc, rating, reviews, students, instructor } = course;
+      courseTitle.innerHTML = `<div class="course_summary">
     <p class="breadcrumbs">
       <i class="fa-solid fa-house"></i>
       <a class="link" href="index.html">Home</a> > Courses
@@ -63,36 +63,43 @@ const loadCourseTitle = () => {
       </div>
     </div>
   </div>`;
-  } else {
-    courseTitle.innerHTML = `<p>Course not found.</p>`;
-  }
-};
+    } else {
+      courseTitle.innerHTML = `<p>Course not found.</p>`;
+    }
+  };
 
-loadCourseTitle();
+  loadCourseTitle();
 
-const loadCourseDetails = () => {
-  const courseId = getCourseId();
+  const loadCourseDetails = () => {
+    const courseId = getCourseId();
 
-  // showing single course based on id
-  const course = coursesData.find((c) => c.id.toString() === courseId);
+    // showing single course based on id
+    const course = coursesData.find((c) => c.id.toString() === courseId);
 
-  // filtering all courses of instructor
-  const instructorCourses = coursesData.filter(
-    (filteredData) => filteredData.instructor.name === course.instructor.name
-  );
-  // console.log(instructorCourses);
-  const courseContainer = document.querySelector(".course_container");
+    // filtering all courses of instructor
+    const instructorCourses = coursesData.filter(
+      (filteredData) => filteredData.instructor.name === course.instructor.name
+    );
+    // console.log(instructorCourses);
+    const courseContainer = document.querySelector(".course_container");
 
-  if (course) {
-    const {
-      image,
-      learningThings,
-      instructor,
-      courseContent,
-      requirements,
-      requireDesc,
-    } = course;
-    courseContainer.innerHTML = `<article class="course_outline">
+    if (course) {
+      const {
+        image,
+        learningThings,
+        instructor,
+        courseContent,
+        requirements,
+        requireDesc,
+        price,
+        offPrice,
+        skillL,
+        enroll,
+        lectures,
+        quizzes,
+        passPercent,
+      } = course;
+      courseContainer.innerHTML = `<article class="course_outline">
     <div class="course_image">
       <img
         src= ${image}
@@ -397,59 +404,161 @@ const loadCourseDetails = () => {
           .slice(0, 3)
           .join("")}
       </div>
-  </article>`;
+  </article>
+  <article class="parent_container">
+      <div class="course_price-list">
+      <div class="price-list_body">
+        <div class="course_upper">
+          <h6>$${price} <span class="strike">$${offPrice}</span></h6>
+          <button class="cart_btn" disabled>Add to Cart</button>
+          <button class="enroll-now_btn">Enroll Now</button>
+          <p>
+            <i class="fa-solid fa-rotate-left"></i> 30-Day Money-Back
+            Guarantee
+          </p>
+        </div>
+        <ul class="course_info">
+          <li>Start Date<span>5 Hrs 20 Min</span></li>
+          <hr
+            style="
+              border: none;
+              height: 1px;
+              background-color: rgba(255, 253, 253, 0.7);
+              margin: 0.6rem 0;
+            "
+          />
+          <li>Enrolled<span>${enroll}</span></li>
+          <hr
+            style="
+              border: none;
+              height: 1px;
+              background-color: rgba(255, 253, 253, 0.7);
+              margin: 0.6rem 0;
+            "
+          />
+          <li>Lectures<span>${lectures}</span></li>
+          <hr
+            style="
+              border: none;
+              height: 1px;
+              background-color: rgba(255, 253, 253, 0.7);
+              margin: 0.6rem 0;
+            "
+          />
+          <li>Skill Level<span>${skillL}</span></li>
+          <hr
+            style="
+              border: none;
+              height: 1px;
+              background-color: rgba(255, 253, 253, 0.7);
+              margin: 0.6rem 0;
+            "
+          />
+          <li>Language<span>English</span></li>
+          <hr
+            style="
+              border: none;
+              height: 1px;
+              background-color: rgba(255, 253, 253, 0.7);
+              margin: 0.6rem 0;
+            "
+          />
+          <li>Quizzes<span>${quizzes}</span></li>
+          <hr
+            style="
+              border: none;
+              height: 1px;
+              background-color: rgba(255, 253, 253, 0.7);
+              margin: 0.6rem 0;
+            "
+          />
+          <li>Certificate<span>Yes</span></li>
+          <hr
+            style="
+              border: none;
+              height: 1px;
+              background-color: rgba(255, 253, 253, 0.7);
+              margin: 0.6rem 0;
+            "
+          />
+          <li>Pass Percentage<span>${passPercent}</span></li>
+        </ul>
+      </div>
+      <div class="detail_info">
+        <div class="social_links">
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+        <hr
+          style="
+            border: none;
+            height: 1px;
+            background-color: rgba(255, 253, 253, 0.2);
+            margin: 1.5rem 0;
+          "
+        />
+        <p class="details">For details about the course</p>
+        <p class="contact">
+          Call Us: <a href="#">+000 222 3333 888</a>
+        </p>
+      </div>
+    </div>
+    </div>
+        </article>`;
 
-    // Show more/less functionality
-    const showMoreButtons = document.querySelectorAll(".show_more");
-    if (showMoreButtons) {
-      showMoreButtons.forEach((button) => {
-        button.addEventListener("click", () => {
-          const learningBody = button.parentNode;
-          learningBody.classList.toggle("active_show");
+      // Show more/less functionality
+      const showMoreButtons = document.querySelectorAll(".show_more");
+      if (showMoreButtons) {
+        showMoreButtons.forEach((button) => {
+          button.addEventListener("click", () => {
+            const learningBody = button.parentNode;
+            learningBody.classList.toggle("active_show");
+          });
+        });
+      }
+
+      // For Accordion
+      const accordionItems = document.querySelectorAll(".accordion_content");
+
+      accordionItems.forEach((item) => {
+        // Listen for clicks on each accordion item
+        item.addEventListener("click", function (event) {
+          const h6 = item.querySelector("h6");
+          if (h6.contains(event.target)) {
+            accordionItems.forEach((otherItem) => {
+              if (otherItem !== item) {
+                otherItem.classList.remove("active");
+              }
+            });
+            item.classList.toggle("active");
+          }
         });
       });
-    }
 
-    // For Accordion
-    const accordionItems = document.querySelectorAll(".accordion_content");
+      // For Rating Progress Bar
+      const data = [
+        { star: 5, count: 514 },
+        { star: 4, count: 71 },
+        { star: 3, count: 312 },
+        { star: 2, count: 11 },
+        { star: 1, count: 64 },
+      ];
 
-    accordionItems.forEach((item) => {
-      // Listen for clicks on each accordion item
-      item.addEventListener("click", function (event) {
-        const h6 = item.querySelector("h6");
-        if (h6.contains(event.target)) {
-          accordionItems.forEach((otherItem) => {
-            if (otherItem !== item) {
-              otherItem.classList.remove("active");
-            }
-          });
-          item.classList.toggle("active");
-        }
+      let total_rating = 0;
+      let rating_based_on_stars = 0;
+
+      data.forEach((rating) => {
+        total_rating += rating.count;
+        rating_based_on_stars += rating.count * rating.star;
       });
-    });
 
-    // For Rating Progress Bar
-    const data = [
-      { star: 5, count: 514 },
-      { star: 4, count: 71 },
-      { star: 3, count: 312 },
-      { star: 2, count: 11 },
-      { star: 1, count: 64 },
-    ];
-
-    let total_rating = 0;
-    let rating_based_on_stars = 0;
-
-    data.forEach((rating) => {
-      total_rating += rating.count;
-      rating_based_on_stars += rating.count * rating.star;
-    });
-
-    const ratingProgressHTML = data
-      .map((rating) => {
-        const { star, count } = rating;
-        const percentage = (count / total_rating) * 100;
-        return `
+      const ratingProgressHTML = data
+        .map((rating) => {
+          const { star, count } = rating;
+          const percentage = (count / total_rating) * 100;
+          return `
             <div class="rating_progress-value">
               <p>${star}<span class="star">&#9733;</span></p>
               <div class="progress">
@@ -458,49 +567,49 @@ const loadCourseDetails = () => {
               <p>${percentage.toFixed()}%</p>
             </div>
           `;
-      })
-      .join("");
+        })
+        .join("");
 
-    courseContainer.querySelector(".rating_progress").innerHTML =
-      ratingProgressHTML;
+      courseContainer.querySelector(".rating_progress").innerHTML =
+        ratingProgressHTML;
 
-    // more course details page
-    document.querySelectorAll(".details_btn").forEach((button) => {
-      button.addEventListener("click", function () {
-        const courseId = this.getAttribute("data-id");
-        window.location.href = `/course-details.html?id=${courseId}`;
-        console.log(window.location.href);
+      // more course details page
+      document.querySelectorAll(".details_btn").forEach((button) => {
+        button.addEventListener("click", function () {
+          const courseId = this.getAttribute("data-id");
+          window.location.href = `/course-details.html?id=${courseId}`;
+          console.log(window.location.href);
+        });
       });
-    });
-  } else {
-    courseContainer.innerHTML = `<p>Course not found.</p>`;
-  }
-};
+    } else {
+      courseContainer.innerHTML = `<p>Course not found.</p>`;
+    }
+  };
 
-loadCourseDetails();
+  loadCourseDetails();
 
-// related courses functionality
-const loadRelatedCourses = () => {
-  const courseId = getCourseId();
+  // related courses functionality
+  const loadRelatedCourses = () => {
+    const courseId = getCourseId();
 
-  // showing single course based on id
-  const course = coursesData.find((c) => c.id.toString() === courseId);
+    // showing single course based on id
+    const course = coursesData.find((c) => c.id.toString() === courseId);
 
-  // filtering all related courses without current id
-  const relatedCourses = coursesData.filter(
-    (filteredData) => filteredData.id !== course.id
-  );
-  // console.log(relatedCourses);
-  const relatedCoursesContent = document.querySelector(
-    ".related_courses_content"
-  );
+    // filtering all related courses without current id
+    const relatedCourses = coursesData.filter(
+      (filteredData) => filteredData.id !== course.id
+    );
+    // console.log(relatedCourses);
+    const relatedCoursesContent = document.querySelector(
+      ".related_courses_content"
+    );
 
-  if (relatedCourses) {
-    relatedCoursesContent.innerHTML = `${relatedCourses
-      .map((relatedCourse) => {
-        const { id, image, name, subtitle, rating, reviews, instructor } =
-          relatedCourse;
-        return `<div class="related-courses_body more-course_body">
+    if (relatedCourses) {
+      relatedCoursesContent.innerHTML = `${relatedCourses
+        .map((relatedCourse) => {
+          const { id, image, name, subtitle, rating, reviews, instructor } =
+            relatedCourse;
+          return `<div class="related-courses_body more-course_body">
       <div class="related-courses_image more-course_image">
         <img
           src=${image}
@@ -532,21 +641,22 @@ const loadRelatedCourses = () => {
       </div>
       </div>
     </div>`;
-      })
-      .slice(3, 7)
-      .join("")}`;
+        })
+        .slice(3, 7)
+        .join("")}`;
 
-    // related course details page
-    document.querySelectorAll(".details_btn").forEach((button) => {
-      button.addEventListener("click", function () {
-        const courseId = this.getAttribute("data-id");
-        window.location.href = `/course-details.html?id=${courseId}`;
-        console.log(window.location.href);
+      // related course details page
+      document.querySelectorAll(".details_btn").forEach((button) => {
+        button.addEventListener("click", function () {
+          const courseId = this.getAttribute("data-id");
+          window.location.href = `/course-details.html?id=${courseId}`;
+          console.log(window.location.href);
+        });
       });
-    });
-  } else {
-    relatedCoursesContent.innerHTML = `<p>Related courses not found.</p>`;
-  }
-};
+    } else {
+      relatedCoursesContent.innerHTML = `<p>Related courses not found.</p>`;
+    }
+  };
 
-loadRelatedCourses();
+  loadRelatedCourses();
+});

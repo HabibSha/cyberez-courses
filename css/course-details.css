@@ -818,7 +818,7 @@ span.grad::before {
   max-width: 90%;
   border: 2px solid var(--color-primary);
   border-radius: 0.5rem;
-  transform: translateY(-50%);
+  transform: translateY(-40%);
 }
 
 .background {
@@ -851,8 +851,7 @@ span.grad::before {
   margin-left: 0.6rem;
 }
 
-.price-list_body .cart_btn,
-.price-list_body .buy-now_btn {
+.price-list_body .cart_btn {
   display: block;
   width: 100%;
   color: var(--color-white);
@@ -862,6 +861,36 @@ span.grad::before {
   border-radius: 0.5rem;
   margin-top: 1rem;
   padding: 1.2rem 0;
+}
+
+.price-list_body .enroll-now_btn {
+  position: relative;
+  width: 100%;
+  font-size: 1rem;
+  font-weight: 400;
+  background-image: linear-gradient(
+    to right,
+    #00d2ff 0%,
+    #3a7bd5 51%,
+    #00d2ff 100%
+  );
+  padding: 1.2rem 0.5rem;
+  text-align: center;
+  text-transform: capitalize;
+  transition: 0.35s;
+  background-size: 200% auto;
+  color: var(--color-white);
+  margin-top: 1rem;
+  border-radius: 0.5rem;
+  display: inline-block;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.price-list_body .enroll-now_btn:hover {
+  background-position: right center;
+  color: var(--color-white);
+  text-decoration: none;
 }
 
 .course_upper p {
