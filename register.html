@@ -71,35 +71,43 @@
         <article class="register_body">
           <div class="register_form">
             <h2>SignUp</h2>
-            <form action="#">
-              <input
-                type="text"
-                name="name"
-                id="name"
-                placeholder="Name"
-                required
-              />
-              <input
-                type="email"
-                name="email"
-                id="email"
-                placeholder="Email"
-                required
-              />
-              <input
-                type="password"
-                name="password"
-                id="password"
-                placeholder="Password"
-                required
-              />
-              <input
-                type="password"
-                name="confirmPassword"
-                id="confirmPassword"
-                placeholder="Confirm Password"
-                required
-              />
+            <form action="#" id="form">
+              <div class="input_control">
+                <input
+                  type="text"
+                  name="username"
+                  id="username"
+                  placeholder="Username"
+                />
+                <span class="error"></span>
+              </div>
+              <div class="input_control">
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Email"
+                />
+                <span class="error"></span>
+              </div>
+              <div class="input_control">
+                <input
+                  type="password"
+                  name="password"
+                  id="password"
+                  placeholder="Password"
+                />
+                <span class="error"></span>
+              </div>
+              <div class="input_control">
+                <input
+                  type="password"
+                  name="confirmPassword"
+                  id="confirmPassword"
+                  placeholder="Confirm Password"
+                />
+                <span class="error"></span>
+              </div>
               <div class="terms_conditions">
                 <input type="checkbox" id="checkbox" />
                 <label
@@ -107,11 +115,7 @@
                 >
               </div>
               <div>
-                <a href="#"
-                  ><button type="submit" class="btn_primary">
-                    Register
-                  </button></a
-                >
+                <button type="submit" class="btn_primary">Register</button>
               </div>
               <div class="if_account">
                 <p>

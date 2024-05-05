@@ -171,6 +171,7 @@ img {
   border-radius: 0.5rem;
   display: inline-block;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .btn_primary:hover {

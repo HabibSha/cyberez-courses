@@ -71,21 +71,25 @@
         <article class="login_body">
           <div class="login_form">
             <h2>Login</h2>
-            <form action="#">
-              <input
-                type="email"
-                name="email"
-                id="email"
-                placeholder="Email"
-                required
-              />
-              <input
-                type="password"
-                name="password"
-                id="password"
-                placeholder="Password"
-                required
-              />
+            <form action="#" id="form">
+              <div class="input_control">
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Email"
+                />
+                <span class="error"></span>
+              </div>
+              <div class="input_control">
+                <input
+                  type="password"
+                  name="password"
+                  id="password"
+                  placeholder="Password"
+                />
+                <span class="error"></span>
+              </div>
               <div class="remember_me">
                 <div class="remember">
                   <input type="checkbox" id="checkbox" />
@@ -94,9 +98,7 @@
                 <span><a href="#">Forgot Password</a></span>
               </div>
               <div>
-                <a href="#"
-                  ><button type="submit" class="btn_primary">Login</button></a
-                >
+                <button type="submit" class="btn_primary">Login</button>
               </div>
               <div class="no_account">
                 <p>
@@ -177,6 +179,7 @@
 
     <!--  ================ END OF FOOTER ====================  -->
 
-    <script src="./js/main.js"></script>
+    <script type="module" src="./js/main.js"></script>
+    <script type="module" src="./js/login.js"></script>
   </body>
 </html>

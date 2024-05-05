@@ -1,7 +1,5 @@
-const username = document.getElementById("username");
 const email = document.getElementById("email");
 const password = document.getElementById("password");
-const confirmPassword = document.getElementById("confirmPassword");
 const form = document.getElementById("form");
 
 form.addEventListener("submit", (event) => {
@@ -33,18 +31,8 @@ const isValidEmail = (email) => {
 };
 
 const inputsValidate = () => {
-  const usernameValue = username.value.trim();
   const emailValue = email.value.trim();
   const passwordValue = password.value.trim();
-  const confirmPasswordValue = confirmPassword.value.trim();
-
-  if (usernameValue === "") {
-    errorMessage(username, "Username is required");
-  } else if (usernameValue.length < 3) {
-    errorMessage(username, "Username should be 3 characters long");
-  } else {
-    successMessage(username);
-  }
 
   if (emailValue === "") {
     errorMessage(email, "Email is required");
@@ -60,13 +48,5 @@ const inputsValidate = () => {
     errorMessage(password, "Password must be at least 6 characters");
   } else {
     successMessage(password);
-  }
-
-  if (confirmPasswordValue === "") {
-    errorMessage(confirmPassword, "Please confirm your password");
-  } else if (confirmPasswordValue !== passwordValue) {
-    errorMessage(confirmPassword, "Password did not match");
-  } else {
-    successMessage(confirmPassword);
   }
 };

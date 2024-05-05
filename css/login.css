@@ -19,7 +19,7 @@ p {
 }
 
 .login_body {
-  max-width: 40rem;
+  width: 40rem;
 }
 
 .login_form {
@@ -39,11 +39,23 @@ p {
 .login_form h2 {
   text-align: center;
   font-weight: 700;
-  margin-bottom: 3rem;
+  margin-bottom: 1.5rem;
   background: linear-gradient(to right, #0017b1 0%, #00dae3 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   padding-bottom: 0.6rem;
+}
+
+.login_form .input_control {
+  display: flex;
+  flex-direction: column;
+}
+
+.login_form .input_control .error {
+  color: #ff0000;
+  font-size: 13px;
+  margin-left: 5px;
+  margin-top: 5px;
 }
 
 .login_form form input:not([type="checkbox"]) {
@@ -52,7 +64,7 @@ p {
   color: var(--color-white);
   padding: 1rem;
   border-radius: 0.5rem;
-  margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
   border: none;
   outline: none;
   background: #2929294d;
@@ -67,7 +79,8 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 1.8rem;
+  margin-top: 0.6rem;
+  margin-bottom: 1rem;
 }
 
 .remember {
@@ -95,6 +108,7 @@ p {
 
 .no_account p {
   font-size: 0.8rem;
+  margin-top: 5px;
 }
 
 .no_account p a {

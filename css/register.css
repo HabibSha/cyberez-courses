@@ -19,7 +19,7 @@ p {
 }
 
 .register_body {
-  max-width: 40rem;
+  width: 40rem;
 }
 
 .register_form {
@@ -42,12 +42,24 @@ p {
 .register_form h2 {
   text-align: center;
   font-weight: 700;
-  margin-bottom: 3rem;
+  margin-bottom: 1.5rem;
   background: linear-gradient(to right, #0017b1 0%, #00dae3 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   padding-bottom: 0.6rem;
   /* color: var(--color-primary); */
+}
+
+.register_form .input_control {
+  display: flex;
+  flex-direction: column;
+}
+
+.register_form .input_control .error {
+  color: #ff0000;
+  font-size: 13px;
+  margin-left: 5px;
+  margin-top: 5px;
 }
 
 .register_form form input:not([type="checkbox"]) {
@@ -56,7 +68,7 @@ p {
   color: var(--color-white);
   padding: 1rem;
   border-radius: 0.5rem;
-  margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
   border: 1px solid transparent;
   outline: none;
   background: #2929294d;
@@ -76,6 +88,7 @@ p {
   display: flex;
   align-items: center;
   gap: 0.6rem;
+  margin-top: 0.6rem;
   margin-bottom: 1.8rem;
 }
 
@@ -96,6 +109,7 @@ p {
 }
 
 .if_account p {
+  margin-top: 0.6rem;
   font-size: 0.8rem;
 }
 
