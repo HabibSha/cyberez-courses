@@ -103,7 +103,7 @@ span.grad::before {
   }
 }
 
-.flex_search {
+/* .flex_search {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -147,7 +147,7 @@ span.grad::before {
   top: 1rem;
   right: 3.5rem;
   cursor: pointer;
-}
+} */
 
 .courses {
   position: relative;

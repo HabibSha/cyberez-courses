@@ -28,12 +28,10 @@
     />
 
     <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/courses.css" />
+    <link rel="stylesheet" href="./css/course-enroll.css" />
   </head>
   <body>
     <!-- =========== START OF NAVBAR ============== -->
-    <!-- <div class="vector1"><img src="./images/vector1.png" alt="vector" /></div> -->
-    <div class="ellipse1"></div>
 
     <nav class="active">
       <div class="container nav_container">
@@ -66,48 +64,39 @@
       </div>
     </nav>
 
-    <!-- ============= END OF NAVBAR ============== -->
+    <!-- =========== END OF NAVBAR ============== -->
 
-    <!-- ============= Start of Upper section ============== -->
-    <section class="page_title">
-      <div class="image_overlay">
-        <article class="container animated_title">
-          <p class="breadcrumbs">
-            <a class="link" href="index.html"
-              ><i class="fa-solid fa-house"></i> Home</a
-            >
-            > Courses
-          </p>
-          <h2>Courses</h2>
-          <p>Courses that help beginner designers become true unicorns.</p>
-          <span class="grad"></span>
-          <div class="flex_search">
-            <p class="result">Showing 1-8 of 12results</p>
-            <!-- <div class="filter_div">
-              <input type="search" name="search" id="search" />
-              <i class="fa-solid fa-magnifying-glass"></i>
-              <button>Filter</button>
-            </div> -->
+    <!-- ============= Start of Course Registration form ================== -->
+    <section class="enroll-form">
+      <div class="container enroll-form_container">
+        <article class="enroll-form_body">
+          <div class="left_enroll">hello</div>
+          <div class="right_enroll">
+            <h5 class="form_title">Course Registration Form</h5>
+            <hr
+              style="
+                border: none;
+                height: 1px;
+                background-color: rgba(255, 253, 253, 0.7);
+                margin: 0.6rem 0;
+              "
+            />
+            <h6>Personal Information *</h6>
+            <div class="inputs_parent">
+              <div class="input_parent">
+                <input type="text" id="name" name="name" placeholder=" " />
+                <span>Full Name *</span>
+              </div>
+              <div class="input_parent">
+                <input type="text" id="number" name="number" placeholder=" " />
+                <span>Mobile Number *</span>
+              </div>
+            </div>
           </div>
         </article>
       </div>
     </section>
-
-    <!-- ============= End of Upper section ============== -->
-
-    <!-- ============== START OF COURSES ===================== -->
-    <section class="courses">
-      <div class="container courses_container">
-        <article>
-          <!-- dynamic data from courses.js -->
-        </article>
-        <div class="vector-left1">
-          <img src="./images/vector-left1.png" alt="vector" />
-        </div>
-        <div class="ellipse-left1"></div>
-      </div>
-    </section>
-    <!-- ============== END OF COURSES ===================== -->
+    <!-- ============= End of Course Registration form ================== -->
 
     <!--  ================ START OF FOOTER ====================  -->
     <footer>
@@ -118,7 +107,7 @@
         <div class="ellipse-left2"></div>
         <article class="left_footer">
           <a href="index.html"
-            ><h5>Cyber<span>Ez</span></h5></a
+            ><h4>Cyber<span>Ez</span></h4></a
           >
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sit
@@ -171,8 +160,6 @@
 
     <!--  ================ END OF FOOTER ====================  -->
 
-    <script type="module" src="./js/courses.js"></script>
     <script type="module" src="./js/main.js"></script>
-    <script type="module" src="./js/data.js"></script>
   </body>
 </html>
