@@ -81,7 +81,7 @@ const loadCourses = () => {
           .join("")}
       
       <div class="hover_button">
-        <button class="btn">Add to cart</button>
+        <button class="btn">Enroll Now</button>
       </div>
       <div class="select_sign"></div>
       <div class="vector-right1">

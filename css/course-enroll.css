@@ -14,7 +14,7 @@
 
 .enroll-form_body {
   position: relative;
-  height: 60vh;
+  height: 72vh;
   display: grid;
   grid-template-columns: 5fr 7fr;
   gap: 1rem;
@@ -31,11 +31,15 @@
   transition: var(--transition);
 }
 
+/* ========= left side of enroll container ============== */
+.left_enroll {
+}
+
 /* ========= right side of enroll container ============== */
 .right_enroll {
   overflow-y: scroll;
   overflow-x: hidden;
-  padding: 1rem 0;
+  padding: 1rem;
   text-align: start;
 }
 
@@ -47,6 +51,8 @@
 
 .right_enroll h6 {
   text-transform: capitalize;
+  margin-top: 1.4rem;
+  margin-left: 0.26rem;
 }
 
 .right_enroll .inputs_parent {
@@ -55,11 +61,18 @@
   gap: 1rem;
 }
 
+.right_enroll .inputs_parentR {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
 .right_enroll .inputs_parent .input_parent {
   position: relative;
 }
 
-.right_enroll .inputs_parent input {
+.right_enroll .inputs_parent input,
+.right_enroll .inputs_parent select {
   width: 100%;
   font-size: 1rem;
   color: var(--color-white);
@@ -70,6 +83,9 @@
   outline: none;
   background: #2929294d;
   transition: var(--transition);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 .right_enroll .inputs_parent .input_parent span {
@@ -93,4 +109,30 @@
   background: #292929;
   padding: 0 4px;
   border-radius: 3px;
+}
+
+.input_parent select option {
+  color: rgb(146, 141, 141);
+  padding: 0.5rem 0.8rem; /* Padding between options */
+}
+
+/* Remove hover effect on options */
+.input_parent select option:hover {
+  background-color: transparent;
+}
+
+/* Style selected option */
+.input_parent select option:checked {
+  background-color: #00a2bc;
+  color: white;
+}
+
+.inside_grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.submit {
+  margin: 2rem 0;
 }
