@@ -27,13 +27,20 @@
     #1f1e1e77
   );
   margin: 4rem 0;
-  border-radius: 1rem;
+  border-radius: 1.5rem;
   transition: var(--transition);
 }
 
 /* ========= left side of enroll container ============== */
 .left_enroll {
-  background-color: cyan;
+  background: rgb(127, 157, 252);
+  background: linear-gradient(
+    0deg,
+    rgba(127, 157, 252, 1) 0%,
+    rgba(45, 220, 253, 1) 100%
+  );
+  border-top-left-radius: 1.5rem;
+  border-bottom-left-radius: 1.5rem;
 }
 
 /* ========= right side of enroll container ============== */
@@ -46,7 +53,12 @@
 
 .right_enroll h5.form_title {
   text-align: center;
-  background: orange;
+  background: rgb(127, 157, 252);
+  background: linear-gradient(
+    0deg,
+    rgba(127, 157, 252, 1) 0%,
+    rgba(45, 220, 253, 1) 100%
+  );
   padding: 1rem 0.4rem;
 }
 

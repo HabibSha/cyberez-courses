@@ -77,8 +77,8 @@
               style="
                 border: none;
                 height: 1px;
-                background-color: rgba(255, 253, 253, 0.7);
-                margin: 0.6rem 0;
+                background-color: rgba(0, 255, 255, 0.61);
+                margin: 1rem 0;
               "
             />
             <form action="">
@@ -96,12 +96,14 @@
                     placeholder=" "
                   />
                   <span>Mobile Number *</span>
+                  <span class="error"></span>
                 </div>
               </div>
               <div class="inputs_parent">
                 <div class="input_parent">
                   <input type="email" id="email" name="email" placeholder=" " />
                   <span>Email Address *</span>
+                  <span class="error"></span>
                 </div>
                 <div class="input_parent">
                   <input
@@ -111,6 +113,7 @@
                     placeholder=" "
                   />
                   <span>Facebook Name *</span>
+                  <span class="error"></span>
                 </div>
               </div>
               <div class="inputs_parent">
@@ -122,6 +125,7 @@
                     placeholder=" "
                   />
                   <span>Present Address *</span>
+                  <span class="error"></span>
                 </div>
                 <div class="inside_grid">
                   <div class="input_parent">
@@ -132,6 +136,7 @@
                       placeholder=" "
                     />
                     <span>Present City *</span>
+                    <span class="error"></span>
                   </div>
                   <div class="input_parent">
                     <input
@@ -141,6 +146,7 @@
                       placeholder=" "
                     />
                     <span>Postal Code</span>
+                    <span class="error"></span>
                   </div>
                 </div>
               </div>
@@ -153,6 +159,7 @@
                     placeholder=" "
                   />
                   <span>Permanent Address *</span>
+                  <span class="error"></span>
                 </div>
                 <div class="inside_grid">
                   <div class="input_parent">
@@ -163,6 +170,7 @@
                       placeholder=" "
                     />
                     <span>City Name *</span>
+                    <span class="error"></span>
                   </div>
                   <div class="input_parent">
                     <input
@@ -172,6 +180,7 @@
                       placeholder=" "
                     />
                     <span>Postal Code</span>
+                    <span class="error"></span>
                   </div>
                 </div>
               </div>
@@ -184,10 +193,12 @@
                     placeholder=" "
                   />
                   <span>Office Address (If Applicable)</span>
+                  <span class="error"></span>
                 </div>
                 <div class="input_parent">
                   <input type="text" id="nid" name="nid" placeholder=" " />
                   <span>NID/Birth Certificate No/Passport No</span>
+                  <span class="error"></span>
                 </div>
               </div>
               <div class="inputs_parent">
@@ -199,10 +210,12 @@
                     placeholder=" "
                   />
                   <span>Occupation *</span>
+                  <span class="error"></span>
                 </div>
                 <div class="input_parent">
-                  <input type="text" id="nid" name="nid" placeholder=" " />
+                  <input type="text" id="birth" name="birth" placeholder=" " />
                   <span>Date of Birth</span>
+                  <span class="error"></span>
                 </div>
               </div>
               <div class="inputs_parent">
@@ -212,10 +225,15 @@
                     <option value="Nationality">Bangladeshi</option>
                     <option value="Other">Other Country</option>
                   </select>
+                  <span class="error"></span>
                 </div>
                 <div class="input_parent">
-                  <input type="text" id="" name="" placeholder=" " />
-                  <span>Date of Birth</span>
+                  <select id="select-course" name="select-course">
+                    <option value="">Select Course *</option>
+                    <option value="Nationality">Bangladeshi</option>
+                    <option value="Other">Other Country</option>
+                  </select>
+                  <span class="error"></span>
                 </div>
               </div>
               <h6>Educational Background *</h6>
@@ -228,6 +246,7 @@
                     placeholder=" "
                   />
                   <span>School/College/University *</span>
+                  <span class="error"></span>
                 </div>
                 <div class="inside_grid">
                   <div class="input_parent">
@@ -238,6 +257,7 @@
                       placeholder=" "
                     />
                     <span>Department *</span>
+                    <span class="error"></span>
                   </div>
                   <div class="input_parent">
                     <input
@@ -247,6 +267,7 @@
                       placeholder=" "
                     />
                     <span>Student ID/Roll *</span>
+                    <span class="error"></span>
                   </div>
                 </div>
               </div>
@@ -260,6 +281,7 @@
                     placeholder=" "
                   />
                   <span>Alternative Name *</span>
+                  <span class="error"></span>
                 </div>
                 <div class="inside_grid">
                   <div class="input_parent">
@@ -270,6 +292,7 @@
                       placeholder=" "
                     />
                     <span>Mobile no *</span>
+                    <span class="error"></span>
                   </div>
                   <div class="input_parent">
                     <input
@@ -279,6 +302,7 @@
                       placeholder=" "
                     />
                     <span>Relation with student *</span>
+                    <span class="error"></span>
                   </div>
                 </div>
               </div>
@@ -287,6 +311,7 @@
                 <div class="input_parent">
                   <input type="text" id="hobby" name="hobby" placeholder=" " />
                   <span>What are you doing leisure time?</span>
+                  <span class="error"></span>
                 </div>
               </div>
               <h6>Why do you learn from Cyberez courses ? *</h6>
@@ -299,6 +324,7 @@
                     placeholder=" "
                   />
                   <span>Write Your Answer Here... *</span>
+                  <span class="error"></span>
                 </div>
               </div>
               <div class="submit">
