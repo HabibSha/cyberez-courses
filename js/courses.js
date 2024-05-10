@@ -81,7 +81,7 @@ const loadCourses = () => {
           .join("")}
       
       <div class="hover_button">
-        <button class="btn">Enroll Now</button>
+        <button class="btn enroll_now">Enroll Now</button>
       </div>
       <div class="select_sign"></div>
       <div class="vector-right1">
@@ -98,6 +98,11 @@ const loadCourses = () => {
       window.location.href = `/course-details.html?id=${courseId}`;
       console.log(window.location.href);
     });
+  });
+
+  const enrollBtn = document.querySelector(".btn .enroll_now");
+  enrollBtn.addEventListener("click", () => {
+    window.location.href = "/course-enroll.html";
   });
 };
 
