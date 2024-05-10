@@ -83,7 +83,7 @@ const inputsValidate = () => {
   }
 
   if (emailValue === "") {
-    errorMessage(email, "Email is required");
+    errorMessage(email, "Email address is required");
     isValid = false;
   } else if (!isValidEmail(emailValue)) {
     errorMessage(email, "Please enter a valid email address");

@@ -1,6 +1,6 @@
 // declaring the inputs element
 const form = document.getElementById("form");
-const name = document.getElementById("name");
+const studentName = document.getElementById("name");
 const mobileNumber = document.getElementById("number");
 const email = document.getElementById("email");
 const surname = document.getElementById("surname");
@@ -26,7 +26,7 @@ const hobby = document.getElementById("hobby");
 const intention = document.getElementById("intention");
 
 const formValues = {
-  name: "",
+  studentName: "",
   mobileNumber: "",
   email: "",
   surname: "",
@@ -58,8 +58,9 @@ const updateFormValues = (key, value) => {
 };
 
 // Adding event listeners for the change event on each input
-name.addEventListener("change", (e) =>
-  updateFormValues("name", e.target.value)
+studentName.addEventListener("change", (e) =>
+  // updateFormValues("studentName", e.target.value),
+  console.log(e.target.value)
 );
 mobileNumber.addEventListener("change", (e) =>
   updateFormValues("mobileNumber", e.target.value)
@@ -134,7 +135,7 @@ form.addEventListener("submit", (event) => {
   if (inputsValidate()) {
     console.log(formValues);
     // Clear input fields after form submission
-    name.value = "";
+    studentName.value = "";
     mobileNumber.value = "";
     email.value = "";
     surname.value = "";
@@ -162,19 +163,21 @@ form.addEventListener("submit", (event) => {
 });
 
 const errorMessage = (element, message) => {
-  const inputControl = element.parentElement;
-  const displayError = inputControl.querySelector(".error");
+  const inputParent = element.parentElement;
+  console.log(inputParent);
+  const displayError = inputParent.querySelector(".error");
+  console.log(displayError);
 
   displayError.innerText = message;
-  inputControl.classList.add("error");
+  inputParent.classList.add("error");
 };
 
 const successMessage = (element) => {
-  const inputControl = element.parentElement;
-  const displayError = inputControl.querySelector(".error");
+  const inputParent = element.parentElement;
+  const displayError = inputParent.querySelector(".error");
 
   displayError.innerText = "";
-  inputControl.classList.remove("error");
+  inputParent.classList.remove("error");
 };
 
 const isValidEmail = (email) => {
@@ -184,7 +187,7 @@ const isValidEmail = (email) => {
 };
 
 const inputsValidate = () => {
-  const nameValue = name.value.trim();
+  const studentNameValue = studentName.value.trim();
   const mobileNumberValue = mobileNumber.value.trim();
   const emailValue = email.value.trim();
   const surnameValue = surname.value.trim();
@@ -210,18 +213,18 @@ const inputsValidate = () => {
   const intentionValue = intention.value.trim();
   let isValid = true;
 
-  if (usernameValue === "") {
-    errorMessage(username, "Username is required");
+  if (studentNameValue === "") {
+    errorMessage(studentName, "Student name is required");
     isValid = false;
-  } else if (usernameValue.length < 3) {
-    errorMessage(username, "Username should be 3 characters long");
+  } else if (studentNameValue.length < 3) {
+    errorMessage(studentName, "Username should be 3 characters long");
     isValid = false;
   } else {
-    successMessage(username);
+    successMessage(studentName);
   }
 
   if (emailValue === "") {
-    errorMessage(email, "Email is required");
+    errorMessage(email, "Email address is required");
     isValid = false;
   } else if (!isValidEmail(emailValue)) {
     errorMessage(email, "Please enter a valid email address");

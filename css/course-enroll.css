@@ -84,6 +84,13 @@
   position: relative;
 }
 
+.right_enroll .inputs_parent .input_parent .error {
+  color: #ff0000;
+  font-size: 13px;
+  margin-left: 5px;
+  margin-top: 5px;
+}
+
 .right_enroll .inputs_parent input,
 .right_enroll .inputs_parent select {
   width: 100%;
