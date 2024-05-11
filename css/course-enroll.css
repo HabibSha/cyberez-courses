@@ -1,4 +1,4 @@
-span {
+label {
   font-size: 1rem;
 }
 
@@ -141,7 +141,7 @@ input[type="number"] {
   -moz-appearance: textfield;
 }
 
-.right_enroll .inputs_parent .input_parent span {
+.right_enroll .inputs_parent .input_parent label {
   position: absolute;
   left: 1rem;
   top: 2.3rem;
@@ -161,8 +161,8 @@ input[type="number"] {
   outline: 1px solid var(--color-primary);
 }
 
-.right_enroll .inputs_parent input:focus + span,
-.right_enroll .inputs_parent input:not(:placeholder-shown) + span {
+.right_enroll .inputs_parent input:focus + label,
+.right_enroll .inputs_parent input:not(:placeholder-shown) + label {
   top: 1rem;
   font-size: 0.8rem;
   color: var(--color-primary);
@@ -209,7 +209,7 @@ input[type="number"] {
     font-size: 1.2rem;
   }
 
-  span {
+  label {
     font-size: 0.9rem;
   }
 
@@ -271,7 +271,7 @@ input[type="number"] {
 
 /* =========== Responsive for mobile screen ============= */
 @media screen and (max-width: 480px) {
-  span {
+  label {
     font-size: 0.85rem;
   }
 
@@ -280,14 +280,14 @@ input[type="number"] {
     margin: 0 auto;
   }
 
-  .right_enroll .inputs_parent .input_parent span {
+  .right_enroll .inputs_parent .input_parent label {
     position: absolute;
     left: 1rem;
     top: 2.5rem;
   }
 
-  .right_enroll .inputs_parent input:focus + span,
-  .right_enroll .inputs_parent input:not(:placeholder-shown) + span {
+  .right_enroll .inputs_parent input:focus + label,
+  .right_enroll .inputs_parent input:not(:placeholder-shown) + label {
     font-size: 0.75rem;
   }
 }
