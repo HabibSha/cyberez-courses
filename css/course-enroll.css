@@ -1,3 +1,7 @@
+span {
+  font-size: 1rem;
+}
+
 /* =========== course registration form ============ */
 .enroll-form {
   position: relative;
@@ -141,6 +145,13 @@ input[type="number"] {
   position: absolute;
   left: 1rem;
   top: 2.3rem;
+  display: block;
+  padding-right: 1.2rem;
+  width: auto;
+  max-width: 250px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   color: rgb(146, 141, 141);
   pointer-events: none;
   transition: 0.3s ease all;
@@ -158,6 +169,8 @@ input[type="number"] {
   background: #292929;
   padding: 0 4px;
   border-radius: 3px;
+  width: auto;
+  max-width: 230px;
 }
 
 .input_parent select option {
@@ -184,4 +197,97 @@ input[type="number"] {
 
 .submit {
   margin: 2rem 0;
+}
+
+/* ============ Device max width 1024px ================== */
+@media screen and (max-width: 1024px) {
+  h6 {
+    font-size: 1.01rem;
+  }
+
+  h5 {
+    font-size: 1.2rem;
+  }
+
+  span {
+    font-size: 0.9rem;
+  }
+
+  .container {
+    max-width: var(--container-width-lg);
+    margin: 0 auto;
+  }
+
+  .enroll-form {
+    top: 0rem;
+    /* padding: 4rem 0; */
+    margin-bottom: 0rem;
+  }
+
+  .enroll-form_body {
+    height: 72vh;
+    grid-template-columns: 1fr;
+    border-radius: 1rem;
+  }
+
+  /* ========= left side of enroll container ============== */
+  .left_enroll {
+    display: none;
+  }
+
+  /* ========= right side of enroll container ============== */
+  .right_enroll {
+    padding: 1rem 1.5rem;
+  }
+
+  .btn_primary {
+    font-size: 1rem;
+    padding: 0.75rem 4rem;
+  }
+}
+
+/* ============= Media Query for Tablet Device ================ */
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: var(--container-width-md);
+    margin: 0 auto;
+  }
+
+  /* ========= right side of enroll container ============== */
+  .right_enroll .inputs_parent {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .right_enroll .inputs_parentR {
+    gap: 0rem;
+  }
+
+  .inside_grid {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+}
+
+/* =========== Responsive for mobile screen ============= */
+@media screen and (max-width: 480px) {
+  span {
+    font-size: 0.85rem;
+  }
+
+  .container {
+    max-width: var(--container-width-sm);
+    margin: 0 auto;
+  }
+
+  .right_enroll .inputs_parent .input_parent span {
+    position: absolute;
+    left: 1rem;
+    top: 2.5rem;
+  }
+
+  .right_enroll .inputs_parent input:focus + span,
+  .right_enroll .inputs_parent input:not(:placeholder-shown) + span {
+    font-size: 0.75rem;
+  }
 }
