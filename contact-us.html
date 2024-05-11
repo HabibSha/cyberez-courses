@@ -118,32 +118,43 @@
               alt="Form Image"
             />
           </div>
-          <form action="#">
+          <form action="" id="form">
             <p class="form_heading">Education For Everyone</p>
             <h5>Contact Us</h5>
             <p>Get a Free Course You Can Contact With us</p>
             <div class="form_info">
-              <input type="text" name="name" value="" placeholder="Name" />
-              <input type="email" name="email" value="" placeholder="Email" />
-              <input
-                type="text"
-                name="subject"
-                value=""
-                placeholder="Your Subject"
-              />
-              <textarea
-                placeholder="Message"
-                rows="6"
-                name="message"
-              ></textarea>
-              <a class="btn_primary" href="#"
-                ><span class="to_left"
-                  ><i class="fa-solid fa-arrow-right"></i
-                ></span>
-                <span class="btn_text">GET IN TOUCH</span>
-                <span class="to_right"
-                  ><i class="fa-solid fa-arrow-right"></i></span
-              ></a>
+              <div class="input_control">
+                <input type="text" name="name" id="name" placeholder="Name" />
+                <label class="error"></label>
+              </div>
+              <div class="input_control">
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Email"
+                />
+                <label class="error"></label>
+              </div>
+              <div class="input_control">
+                <input
+                  type="text"
+                  name="subject"
+                  id="subject"
+                  placeholder="Your Subject"
+                />
+                <label class="error"></label>
+              </div>
+              <div class="input_control">
+                <textarea
+                  placeholder="Message"
+                  rows="6"
+                  name="message"
+                  id="message"
+                ></textarea>
+                <label class="error"></label>
+              </div>
+              <button class="btn_primary" type="submit">Get in Touch</button>
             </div>
           </form>
         </article>

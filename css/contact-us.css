@@ -300,6 +300,13 @@ textarea {
   transition: var(--transition);
 }
 
+form .input_control .error {
+  color: #ff0000;
+  font-size: 13px;
+  margin-left: 5px;
+  margin-top: 5px;
+}
+
 form input::placeholder {
   font-size: 1rem;
 }

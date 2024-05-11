@@ -181,44 +181,6 @@ img {
   text-decoration: none;
 }
 
-.btn_primary .btn_text {
-  position: relative;
-  display: block;
-  transition: transform 0.35s ease;
-}
-
-.btn_primary:hover .btn_text {
-  transform: translateX(10px);
-}
-
-.btn_primary .to_left {
-  position: absolute;
-  left: 36%;
-  top: 50%;
-  transform: translateY(-50%) translateX(-10px);
-  opacity: 0;
-  transition: opacity 0.35s, transform 0.35s;
-}
-
-.btn_primary:hover .to_left {
-  opacity: 1;
-  transform: translateY(-50%) translateX(0);
-}
-
-.btn_primary .to_right {
-  position: absolute;
-  right: 35%;
-  top: 50%;
-  transform: translateY(-50%);
-  opacity: 1;
-  transition: opacity 0.35s, transform 0.35s;
-}
-
-.btn_primary:hover .to_right {
-  opacity: 0;
-  transform: translateY(-50%) translateX(10px);
-}
-
 .btn {
   font-family: "Titillium Web", sans-serif;
   display: inline-block;
