@@ -164,9 +164,7 @@ form.addEventListener("submit", (event) => {
 
 const errorMessage = (element, message) => {
   const inputParent = element.parentElement;
-  console.log(inputParent);
   const displayError = inputParent.querySelector(".error");
-  console.log(displayError);
 
   displayError.innerText = message;
   inputParent.classList.add("error");
@@ -223,6 +221,16 @@ const inputsValidate = () => {
     successMessage(studentName);
   }
 
+  if (mobileNumberValue === "") {
+    errorMessage(mobileNumber, "Mobile number is required");
+    isValid = false;
+  } else if (mobileNumberValue.length < 5) {
+    errorMessage(mobileNumber, "Mobile number should be 5 characters long");
+    isValid = false;
+  } else {
+    successMessage(mobileNumber);
+  }
+
   if (emailValue === "") {
     errorMessage(email, "Email address is required");
     isValid = false;
@@ -233,24 +241,119 @@ const inputsValidate = () => {
     successMessage(email);
   }
 
-  if (passwordValue === "") {
-    errorMessage(password, "Password is required");
+  if (surnameValue === "") {
+    errorMessage(surname, "Facebook name is required");
     isValid = false;
-  } else if (passwordValue.length < 6) {
-    errorMessage(password, "Password must be at least 6 characters");
+  } else if (surnameValue.length < 3) {
+    errorMessage(surname, "Facebook name should be 3 characters long");
     isValid = false;
   } else {
-    successMessage(password);
+    successMessage(surname);
   }
 
-  if (confirmPasswordValue === "") {
-    errorMessage(confirmPassword, "Please confirm your password");
+  if (presentAddressValue === "") {
+    errorMessage(presentAddress, "Present address is required");
     isValid = false;
-  } else if (confirmPasswordValue !== passwordValue) {
-    errorMessage(confirmPassword, "Password did not match");
+  } else if (presentAddressValue.length < 3) {
+    errorMessage(presentAddress, "Present address should be 3 characters long");
     isValid = false;
   } else {
-    successMessage(confirmPassword);
+    successMessage(presentAddress);
+  }
+
+  if (presentCityValue === "") {
+    errorMessage(presentCity, "Present city is required");
+    isValid = false;
+  } else if (presentCityValue.length < 3) {
+    errorMessage(presentCity, "Present city should be 2 characters long");
+    isValid = false;
+  } else {
+    successMessage(presentCity);
+  }
+
+  if (permanentAddressValue === "") {
+    errorMessage(permanentAddress, "Permanent address is required");
+    isValid = false;
+  } else if (permanentAddressValue.length < 3) {
+    errorMessage(
+      permanentAddress,
+      "Permanent address should be 3 characters long"
+    );
+    isValid = false;
+  } else {
+    successMessage(permanentAddress);
+  }
+
+  if (cityNameValue === "") {
+    errorMessage(cityName, "City name is required");
+    isValid = false;
+  } else if (cityNameValue.length < 3) {
+    errorMessage(cityName, "City name should be 2 characters long");
+    isValid = false;
+  } else {
+    successMessage(cityName);
+  }
+
+  if (occupationValue === "") {
+    errorMessage(occupation, "Occupation is required");
+    isValid = false;
+  } else {
+    successMessage(occupation);
+  }
+
+  if (educationValue === "") {
+    errorMessage(education, "Education background is required");
+    isValid = false;
+  } else {
+    successMessage(education);
+  }
+
+  if (departmentValue === "") {
+    errorMessage(department, "Department is required");
+    isValid = false;
+  } else {
+    successMessage(department);
+  }
+
+  if (studentIdValue === "") {
+    errorMessage(studentId, "Student ID/Roll is required");
+    isValid = false;
+  } else {
+    successMessage(studentId);
+  }
+
+  if (altNameValue === "") {
+    errorMessage(altName, "Alternative name is required");
+    isValid = false;
+  } else if (altNameValue.length < 3) {
+    errorMessage(altName, "Alternative name should be 3 characters long");
+    isValid = false;
+  } else {
+    successMessage(altName);
+  }
+
+  if (altNumberValue === "") {
+    errorMessage(altNumber, "Mobile number is required");
+    isValid = false;
+  } else if (altNumberValue.length < 5) {
+    errorMessage(altNumber, "Mobile number should be 5 characters long");
+    isValid = false;
+  } else {
+    successMessage(altNumber);
+  }
+
+  if (relationValue === "") {
+    errorMessage(relation, "Relation is required");
+    isValid = false;
+  } else {
+    successMessage(relation);
+  }
+
+  if (intentionValue === "") {
+    errorMessage(intention, "This field is required");
+    isValid = false;
+  } else {
+    successMessage(relation);
   }
 
   return isValid;

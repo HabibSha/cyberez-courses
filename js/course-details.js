@@ -584,6 +584,15 @@ document.addEventListener("DOMContentLoaded", function () {
     } else {
       courseContainer.innerHTML = `<p>Course not found.</p>`;
     }
+
+    // Enroll now button
+    const enrollBtn = document.querySelector(".enroll-now_btn");
+    if (enrollBtn) {
+      enrollBtn.addEventListener("click", () => {
+        window.location.href = "course-enroll.html";
+        console.log(window.location.href);
+      });
+    }
   };
 
   loadCourseDetails();

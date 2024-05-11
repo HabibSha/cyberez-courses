@@ -100,10 +100,13 @@ const loadCourses = () => {
     });
   });
 
-  const enrollBtn = document.querySelector(".btn .enroll_now");
-  enrollBtn.addEventListener("click", () => {
-    window.location.href = "/course-enroll.html";
-  });
+  const enrollBtn = document.querySelector(".enroll_now");
+  if (enrollBtn) {
+    enrollBtn.addEventListener("click", () => {
+      window.location.href = "course-enroll.html";
+      console.log(window.location.href);
+    });
+  }
 };
 
 loadCourses();

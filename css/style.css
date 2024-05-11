@@ -81,6 +81,7 @@ html::-webkit-scrollbar-track {
 
 html::-webkit-scrollbar-thumb {
   background: var(--bg-linear);
+  border-radius: 1rem;
 }
 
 .container {

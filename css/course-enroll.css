@@ -51,6 +51,24 @@
   text-align: start;
 }
 
+.right_enroll::-webkit-scrollbar {
+  width: 8px;
+}
+
+.right_enroll::-webkit-scrollbar-thumb {
+  background-color: var(--color-primary);
+  border-radius: 10px;
+}
+
+.right_enroll::-webkit-scrollbar-track {
+  background: rgb(43, 42, 42);
+  border-radius: 10px;
+}
+
+.right_enroll::-webkit-scrollbar-corner {
+  background: black;
+}
+
 .right_enroll h5.form_title {
   text-align: center;
   background: rgb(127, 157, 252);
@@ -106,6 +124,17 @@
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* For Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
 }
 
 .right_enroll .inputs_parent .input_parent span {
