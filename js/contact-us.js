@@ -50,7 +50,8 @@ const errorMessage = (element, message) => {
   const displayError = inputControl.querySelector(".error");
 
   displayError.innerText = message;
-  inputControl.classList.add("error");
+  const error = inputControl.classList.add("error");
+  console.log(error);
 };
 
 const successMessage = (element) => {

@@ -115,3 +115,54 @@ p {
   font-size: 0.9rem;
   color: var(--color-primary);
 }
+
+/* ============ Device max width 1024px ================== */
+@media screen and (max-width: 1024px) {
+  .container {
+    max-width: var(--container-width-lg);
+    margin: 0 auto;
+  }
+
+  .login_page {
+    top: 0rem;
+    padding: 4rem 0;
+    margin-bottom: 0rem;
+  }
+
+  .login_form {
+    border-radius: 1rem;
+    padding: 3rem;
+  }
+
+  .btn_primary {
+    font-size: 1rem;
+    padding: 0.75rem 4rem;
+  }
+}
+
+/* ============= Media Query for Tablet Device ================ */
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: var(--container-width-md);
+    margin: 0 auto;
+  }
+
+  .login_form {
+    padding: 2rem;
+  }
+}
+
+/* ============= Media Query for Tablet Device ================ */
+@media screen and (max-width: 600px) {
+  .container {
+    max-width: var(--container-width-sm);
+    margin: 0 auto;
+  }
+
+  .login_form {
+    padding: 2rem 1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+}

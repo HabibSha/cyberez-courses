@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
       courseTitle.innerHTML = `<div class="course_summary">
     <p class="breadcrumbs">
       <i class="fa-solid fa-house"></i>
-      <a class="link" href="index.html">Home</a> > Courses
+      <a class="link" href="index.html">Home</a> > course-details
     </p>
     <h2>${name}</h2>
     <p class="description">

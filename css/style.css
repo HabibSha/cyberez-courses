@@ -1041,6 +1041,10 @@ footer {
   transition: var(--transition);
 }
 
+.left_footer .socials i:nth-child(2) {
+  padding: 0.5rem 0.7rem;
+}
+
 .left_footer .socials i:hover {
   color: var(--color-primary);
   border: 1px solid var(--color-primary);
@@ -1910,7 +1914,7 @@ h6.footer_head {
   }
 
   p {
-    font-size: 0.938rem;
+    font-size: 0.8rem;
   }
 
   a {
@@ -2041,6 +2045,14 @@ h6.footer_head {
     margin-top: 1.4rem;
   }
 
+  .left_footer .socials i {
+    font-size: 1rem;
+  }
+
+  .left_footer .socials i:nth-child(2) {
+    padding: 0.5rem 0.7rem;
+  }
+
   .footer_contact-us .contact-site {
     display: flex;
     justify-content: center;
@@ -2111,7 +2123,7 @@ h6.footer_head {
   }
 
   p {
-    font-size: 0.838rem;
+    font-size: 0.8rem;
   }
 
   a {
