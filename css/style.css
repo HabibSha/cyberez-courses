@@ -2346,8 +2346,22 @@ h6.footer_head {
   }
 
   /* ================ FOOTER ==================== */
-  .footer_contact-us .contact-site {
+  .footer_container {
+    text-align: start;
+    grid-template-columns: 1fr;
+  }
+
+  .contact-site div {
+    display: flex;
     align-items: center;
+  }
+
+  .left_footer .socials {
+    justify-content: flex-start;
+  }
+
+  .footer_contact-us .contact-site {
+    align-items: flex-start;
     gap: 1.2rem;
   }
 
@@ -2355,6 +2369,12 @@ h6.footer_head {
     max-width: 70%;
     height: 4rem;
     font-size: 0.9rem;
+  }
+
+  .footer_newsletter button {
+    top: 51.5%;
+    right: 32%;
+    transform: translateY(-0%); /* Center the button vertically */
   }
 
   .footer_newsletter input::placeholder {
