@@ -301,6 +301,27 @@ const inputsValidate = () => {
     successMessage(occupation);
   }
 
+  if (birthValue === "") {
+    errorMessage(birth, "Date of Birth is required");
+    isValid = false;
+  } else {
+    successMessage(birth);
+  }
+
+  if (nationalityValue === "") {
+    errorMessage(nationality, "Nationality is required");
+    isValid = false;
+  } else {
+    successMessage(nationality);
+  }
+
+  if (selectCourseValue === "") {
+    errorMessage(selectCourse, "Select course is required");
+    isValid = false;
+  } else {
+    successMessage(selectCourse);
+  }
+
   if (educationValue === "") {
     errorMessage(education, "Education background is required");
     isValid = false;
@@ -343,7 +364,7 @@ const inputsValidate = () => {
   }
 
   if (relationValue === "") {
-    errorMessage(relation, "Relation is required");
+    errorMessage(relation, "This field is required");
     isValid = false;
   } else {
     successMessage(relation);

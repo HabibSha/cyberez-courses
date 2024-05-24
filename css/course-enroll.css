@@ -106,6 +106,13 @@ label {
   position: relative;
 }
 
+.right_enroll .inputs_parent .input_parent .down_arrow {
+  position: absolute;
+  right: 0.5rem;
+  top: 2.5rem;
+  color: rgb(173, 173, 173);
+}
+
 .right_enroll .inputs_parent .input_parent .error {
   color: #ff0000;
   font-size: 13px;
@@ -128,6 +135,15 @@ label {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+}
+
+.right_enroll .inputs_parent select {
+  font-family: "Poppins", sans-serif;
+  color: rgb(146, 141, 141);
+  cursor: pointer;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 input[type="number"]::-webkit-inner-spin-button,
@@ -169,12 +185,11 @@ input[type="number"] {
   background: #292929;
   padding: 0 4px;
   border-radius: 3px;
-  width: auto;
-  max-width: 230px;
 }
 
 .input_parent select option {
-  color: rgb(146, 141, 141);
+  color: rgb(173, 173, 173);
+  background-color: rgb(41, 40, 40);
   padding: 0.5rem 0.8rem; /* Padding between options */
 }
 

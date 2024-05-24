@@ -25,10 +25,8 @@ form.addEventListener("submit", (event) => {
   if (inputsValidate()) {
     console.log(formValues);
     // Clear input fields after form submission
-    username.value = "";
     email.value = "";
     password.value = "";
-    confirmPassword.value = "";
   }
 });
 
