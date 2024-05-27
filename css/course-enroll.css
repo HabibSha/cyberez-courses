@@ -255,6 +255,11 @@ input[type="number"] {
     padding: 1rem 1.5rem;
   }
 
+  .right_enroll .inputs_parent .input_parent label {
+    left: 1rem;
+    top: 2.5rem;
+  }
+
   .btn_primary {
     font-size: 1rem;
     padding: 0.75rem 4rem;
