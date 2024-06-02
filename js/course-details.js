@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function () {
       <p class="students">${students} students</p>
     </div>
     <div class="instructor">
-      <img src="./images/testimonial2.png" alt="Instructor" />
+      <img src=${instructor.image} alt="Instructor" />
       <p>
         By <a href="#">${instructor.name}</a> In
         <a href="#">${instructor.profession}</a>

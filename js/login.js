@@ -1,5 +1,6 @@
 const email = document.getElementById("email");
 const password = document.getElementById("password");
+const successMsg = document.getElementById("success_message");
 const form = document.getElementById("form");
 
 const formValues = {
@@ -24,6 +25,10 @@ form.addEventListener("submit", (event) => {
   event.preventDefault();
   if (inputsValidate()) {
     console.log(formValues);
+    successMsg.classList.add("show");
+    setTimeout(function () {
+      successMsg.classList.remove("show");
+    }, 3000);
     // Clear input fields after form submission
     email.value = "";
     password.value = "";
