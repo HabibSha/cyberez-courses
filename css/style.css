@@ -230,6 +230,49 @@ nav {
   align-items: center;
 }
 
+.flex_inside {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.user_profile .user_avatar {
+  position: absolute;
+  top: 1rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.toggle_menu {
+  text-align: right;
+  position: absolute;
+  top: 5rem;
+  right: -3rem;
+  width: 25%;
+  /* display: none; */
+  background-color: #16809b;
+  transform: translateY(-3rem);
+  opacity: 0;
+  border-radius: 0.2rem;
+  padding: 0.4rem 1rem;
+  transition: all 0.3s ease-in;
+}
+
+.toggle_menu.show {
+  /* display: block; */
+  transform: translateY(0rem);
+  opacity: 100;
+}
+
+.toggle_menu p {
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+}
+
 /* .nav_container h4 {
   font-size: 2.4rem;
   font-weight: 600;
@@ -715,7 +758,7 @@ header {
 }
 
 .below_our-goals .slider_element {
-  background-color: #00a2bc;
+  /* background-color: #00a2bc; */
   overflow: hidden;
   width: auto;
   display: flex;
@@ -1707,6 +1750,17 @@ h6.footer_head {
 
   .nav_container {
     /* position: relative; */
+  }
+
+  .toggle_menu {
+    right: 0;
+    width: auto;
+    max-width: 50%;
+    padding: 0.4rem 1rem;
+    border-radius: 0;
+    top: 3rem;
+    transform: translateY(-3rem);
+    background-color: #16809b;
   }
 
   .mobile_navbar_btn {

@@ -658,6 +658,7 @@ document.addEventListener("DOMContentLoaded", function () {
       document.querySelectorAll(".details_btn").forEach((button) => {
         button.addEventListener("click", function () {
           const courseId = this.getAttribute("data-id");
+          console.log(courseId.type);
           window.location.href = `/course-details.html?id=${courseId}`;
           console.log(window.location.href);
         });

@@ -18,6 +18,14 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
+  // Toggle profile picture info
+  const avatar = document.getElementById("avatar");
+  const menu = document.getElementById("menu");
+
+  avatar.addEventListener("click", () => {
+    menu.classList.toggle("show");
+  });
+
   // Toggle Navbar Menu
   const navbar_btn = document.querySelector(".mobile_navbar_btn");
   const nav_header = document.querySelector("nav");
