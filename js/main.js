@@ -1,11 +1,20 @@
 // Scroll Vertically and fixed navbar
-window.addEventListener("scroll", () => {
-  document
-    .querySelector("nav")
-    .classList.toggle("window-scroll", window.scrollY > 0);
-  document
-    .querySelector(".navbar")
-    .classList.toggle("scroll_nav_menu", window.scrollY > 0);
+document.addEventListener("DOMContentLoaded", function () {
+  window.addEventListener("scroll", () => {
+    const nav = document.querySelector("nav");
+    const navbar = document.querySelector(".navbar");
+    const userProfile = document.querySelector(".user_profile");
+
+    if (window.scrollY > 0) {
+      nav.classList.add("window-scroll");
+      navbar.classList.add("scroll_nav_menu");
+      userProfile.classList.add("user_profile_scroll");
+    } else {
+      nav.classList.remove("window-scroll");
+      navbar.classList.remove("scroll_nav_menu");
+      userProfile.classList.remove("user_profile_scroll");
+    }
+  });
 });
 
 // Active NavLink

@@ -230,18 +230,15 @@ nav {
   align-items: center;
 }
 
-/* .flex_inside {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
-} */
-
-.user_profile {
+nav .user_profile {
   position: absolute;
   right: 10%;
   top: 1.5rem;
+  transition: top 0.3s ease-in-out;
+}
+
+nav .user_profile_scroll {
+  top: 0rem;
 }
 
 .user_profile .user_avatar {
