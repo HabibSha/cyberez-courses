@@ -94,8 +94,7 @@ const loadCourses = () => {
 
   document.querySelectorAll(".details_btn").forEach((button) => {
     button.addEventListener("click", function () {
-      const courseId = Number(this.getAttribute("data-id"));
-      console.log("Course ID: ", typeof courseId);
+      const courseId = this.getAttribute("data-id");
       window.location.href = `/course-details.html?id=${courseId}`;
       console.log(window.location.href);
     });

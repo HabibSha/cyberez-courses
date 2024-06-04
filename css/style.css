@@ -206,7 +206,7 @@ img {
 nav {
   font-family: "Titillium Web", sans-serif;
   width: 100vw;
-  /* background-color: ; */
+  /* background-color: cadetblue; */
   position: fixed;
   height: 7.1rem;
   top: 0;
@@ -230,12 +230,18 @@ nav {
   align-items: center;
 }
 
-.flex_inside {
+/* .flex_inside {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 2rem;
+} */
+
+.user_profile {
+  position: absolute;
+  right: 10%;
+  top: 1.5rem;
 }
 
 .user_profile .user_avatar {
@@ -251,8 +257,8 @@ nav {
   text-align: right;
   position: absolute;
   top: 5rem;
-  right: -3rem;
-  width: 25%;
+  right: -2.5rem;
+  width: 10rem;
   /* display: none; */
   background-color: #16809b;
   transform: translateY(-3rem);
@@ -295,6 +301,7 @@ nav {
   max-width: 39.6rem;
   padding: 0.9rem 1.7rem;
   border-radius: 6.25rem;
+  margin-right: 2rem;
 }
 
 .nav_menu {
@@ -1197,6 +1204,12 @@ h6.footer_head {
     max-width: var(--container-width-md);
     margin: 0 auto;
   }
+
+  /* ============== Navbar ==================== */
+  .navbar {
+    margin-right: 5rem;
+  }
+
   /* ================  HEADER ==================== */
 
   .left_header p {
@@ -1748,19 +1761,23 @@ h6.footer_head {
     height: 6rem;
   }
 
-  .nav_container {
-    /* position: relative; */
+  .user_profile {
+    position: absolute;
+    right: 17%;
+    top: 0.9rem;
+  }
+
+  .user_profile .user_avatar {
+    top: 1.2rem;
+    width: 1.8rem;
+    height: 1.8rem;
   }
 
   .toggle_menu {
-    right: 0;
-    width: auto;
-    max-width: 50%;
-    padding: 0.4rem 1rem;
-    border-radius: 0;
-    top: 3rem;
-    transform: translateY(-3rem);
-    background-color: #16809b;
+    top: 4rem;
+    right: -2rem;
+    width: 10rem;
+    /* display: none; */
   }
 
   .mobile_navbar_btn {
@@ -1776,7 +1793,7 @@ h6.footer_head {
   }
 
   .navbar {
-    background-color: cadetblue;
+    background-color: rgb(21, 91, 148);
     position: absolute;
     width: 100%;
     height: 100vh;
@@ -1786,7 +1803,7 @@ h6.footer_head {
     display: flex;
     justify-content: center;
     align-items: center;
-    transform: translateX(100%);
+    transform: translateX(100%) !important;
     transition: all 0.5s linear;
     opacity: 0;
     visibility: hidden;
@@ -1798,7 +1815,7 @@ h6.footer_head {
   }
 
   .active .navbar {
-    transform: translateX(0%);
+    transform: translateX(4.2%) !important;
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
@@ -2211,6 +2228,24 @@ h6.footer_head {
 
   nav button {
     font-size: 1.2rem;
+  }
+
+  .user_profile {
+    right: 4.8rem;
+    top: 0.3rem;
+  }
+
+  .user_profile .user_avatar {
+    top: 1.25rem;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .toggle_menu {
+    top: 3.5rem;
+    right: -1.7rem;
+    width: 8rem;
+    /* display: none; */
   }
 
   /* ========== Header ============ */
