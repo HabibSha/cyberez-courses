@@ -45,6 +45,59 @@ label {
   );
   border-top-left-radius: 1.5rem;
   border-bottom-left-radius: 1.5rem;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+.enroll_detail {
+  padding: 2.8rem 0;
+}
+
+.enroll_detail h4 {
+  color: blue;
+  margin-bottom: 1.8rem;
+  font-weight: 700;
+}
+
+.schedule {
+  padding: 1rem 0;
+}
+
+.schedule h6 {
+  color: blue;
+  margin-bottom: 1rem;
+}
+
+.schedule p {
+  color: var(--color-white);
+}
+
+.information {
+  margin-top: 1rem;
+}
+
+.information p {
+  color: white;
+  font-size: 1.2rem;
+}
+
+.information h6 {
+  color: white;
+}
+
+.information h6 span {
+  color: blue;
+}
+
+.information ul {
+  margin-top: 1.2rem;
+  text-align: start;
+  padding-left: 20%;
+}
+
+.information ul li {
+  margin-bottom: 0.6rem;
 }
 
 /* ========= right side of enroll container ============== */
