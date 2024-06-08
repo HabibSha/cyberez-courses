@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const activePage = window.location.pathname;
   const navLinks = document.querySelectorAll(".navbar a");
   navLinks.forEach((link) => {
-    if (link.href.includes(`${activePage}`)) {
+    if (link.pathname === activePage) {
       link.classList.add("active_link");
     }
   });

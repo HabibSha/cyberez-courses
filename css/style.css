@@ -231,6 +231,7 @@ nav {
 }
 
 nav .user_profile {
+  display: none;
   position: absolute;
   right: 10%;
   top: 1.5rem;
@@ -298,7 +299,7 @@ nav .user_profile_scroll {
   max-width: 39.6rem;
   padding: 0.9rem 1.7rem;
   border-radius: 6.25rem;
-  margin-right: 2rem;
+  /* margin-right: 2rem; */
 }
 
 .nav_menu {
@@ -1204,7 +1205,7 @@ h6.footer_head {
 
   /* ============== Navbar ==================== */
   .navbar {
-    margin-right: 5rem;
+    /* margin-right: 5rem; */
   }
 
   /* ================  HEADER ==================== */
@@ -1754,11 +1755,11 @@ h6.footer_head {
 
   /* ============= NAVBAR =============== */
   nav {
-    position: relative;
     height: 6rem;
   }
 
   .user_profile {
+    display: none;
     position: absolute;
     right: 17%;
     top: 0.9rem;
@@ -1800,7 +1801,7 @@ h6.footer_head {
     display: flex;
     justify-content: center;
     align-items: center;
-    transform: translateX(100%) !important;
+    transform: translateX(100%);
     transition: all 0.5s linear;
     opacity: 0;
     visibility: hidden;
@@ -1812,7 +1813,7 @@ h6.footer_head {
   }
 
   .active .navbar {
-    transform: translateX(4.2%) !important;
+    transform: translateX(0%);
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
